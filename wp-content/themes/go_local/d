@@ -1,0 +1,60 @@
+[33mcommit 75bc25b14a0ee17edf333bfa39757433485746de[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: matan alkalay <matan.alkalay@gmail.com>
+Date:   Mon Jul 24 11:37:20 2017 +0300
+
+    first commit
+
+[33mcommit 4052d0f4a31568ac5ba5e34b7f9f45df7303c4fc[m
+Merge: 73b5cc9 5f3e2c3
+Author: matan alkalay <matan.alkalay@gmail.com>
+Date:   Mon Jul 24 11:16:56 2017 +0300
+
+    Merge branch 'master' of https://github.com/matanalkalay/goLocal
+
+[33mcommit 73b5cc9548df3d3c3c26a14381167cb86592eb7e[m
+Author: matan alkalay <matan.alkalay@gmail.com>
+Date:   Mon Jul 24 10:58:23 2017 +0300
+
+    i have export the db
+
+[33mcommit fcc29dec9ea35c2092ffcc91141886ef3511a801[m
+Author: matan alkalay <matan.alkalay@gmail.com>
+Date:   Mon Jul 24 10:43:31 2017 +0300
+
+    ihave added config.php
+
+[33mcommit 5f3e2c3e0dc2dd5e8f8aed9921fc6851cf152523[m
+Author: rtal <rtal@cambium.co.il>
+Date:   Mon Jul 24 10:28:57 2017 +0300
+
+    scscs
+
+[33mcommit 0d3e476cb88e2dba8fda025bf360cdc57637e2c2[m
+Author: matan alkalay <matan.alkalay@gmail.com>
+Date:   Sun Jul 23 17:22:16 2017 +0300
+
+    first commit
+
+[33mcommit 33273ffc5f59140ec1cb0a691a9497ea13b480a3[m
+Author: matan alkalay <matan.alkalay@gmail.com>
+Date:   Sun Jul 23 17:22:03 2017 +0300
+
+    first commit
+
+[33mcommit 8a6a503db1723c55dfbf26668aa6f380b0bb291e[m
+Author: matan alkalay <matan.alkalay@gmail.com>
+Date:   Sun Jul 23 16:47:57 2017 +0300
+
+    the first uplode of files
+
+[33mcommit 287a5fb6674d80b84d63c79f34689c55cfde5bbe[m
+Author: matan alkalay <matan.alkalay@gmail.com>
+Date:   Sun Jul 23 12:00:58 2017 +0300
+
+    first commit
+
+[33mcommit bb4526bc0a47fc3c5edff66a4345b82172411745[m
+Author: matan alkalay <matan.alkalay@gmail.com>
+Date:   Sun Jul 23 12:00:48 2017 +0300
+
+    first commit

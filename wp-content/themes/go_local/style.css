@@ -1,0 +1,70 @@
+/*
+Theme Name: go_local
+Theme URI: golocal.co.il
+Author: matanalkalay
+Author URI: matanalkalay
+Description: golocalTheme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: go_local
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+go_local is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+.lalal{
+	djskljk
+}
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+	/*-ms-text-size-adjust:     100%;*/
+}
+body {
+	direction: rtl;
+
+}
+#menu-primary ul li {
+text-decoration: none;
+}
+#menu-primary  li {
+	display: inline-block;
+	color: #091F39;
+}
+#menu-primary  a {
+	text-decoration: none;
+}
+.tester{
+	color: blue;
+}
+footer{
+background-color: black;
+color: #F2F2F2;
+}
+.menuFooter{	
+float: right;
+}
+.menuFooter ul li{
+list-style: none;	
+}
+.menuFooter ul li a{
+	color: #F2F2F2;
+}
+.infoFooter{
+	text-align: left;
+	float: left;
+}
+.fa-facebook{
+	color: #76C4A4;
+}.fa-youtube{
+	color: #76C4A4;
+}
