@@ -51,6 +51,16 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
+/** Detect localhost */
+function is_localhost() {
+    $whitelist = array( '127.0.0.1', '::1' );
+    if( in_array( $_SERVER['REMOTE_ADDR'], $whitelist) )
+        return true;
+}
+/** Site URL */
+require_once(__DIR__ . "/wp-config_url.php");
+
+define('IS_LOCALHOST', is_localhost());
 define('AUTH_KEY',         'p1~%=!W{%8#Z7<P];S}:eRQZuK~Bn&wMT` u:o!un]cXx52cq`&([Nkg>[BLv~XU');
 
 define('SECURE_AUTH_KEY',  'Y(6{Dz~b_@u^ib~$>RQ@ `xJNK&0c<;wk@x==nnDPq>-9|tQ[wF>;@.yd:4oU}]-');
