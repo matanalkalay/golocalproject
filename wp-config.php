@@ -20,6 +20,11 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+function is_localhost() {
+    $whitelist = array( '127.0.0.1', '::1' );
+    if( in_array( $_SERVER['REMOTE_ADDR'], $whitelist) )
+        return true;
+}
 define('DB_NAME', 'golocal_go-local');
 
 
@@ -52,11 +57,7 @@ define('DB_COLLATE', '');
  * @since 2.6.0
  */
 /** Detect localhost */
-function is_localhost() {
-    $whitelist = array( '127.0.0.1', '::1' );
-    if( in_array( $_SERVER['REMOTE_ADDR'], $whitelist) )
-        return true;
-}
+
 /** Site URL */
 require_once(__DIR__ . "/wp-config_url.php");
 
