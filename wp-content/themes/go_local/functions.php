@@ -6,7 +6,11 @@
  *
  * @package go_local
  */
+/* Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/custom-header.php';
 
+/**
 if ( ! function_exists( 'go_local_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -185,11 +189,7 @@ function go_local_scripts() {
 add_action( 'wp_enqueue_scripts', 'go_local_scripts' );
 
 /**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
+ 
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
