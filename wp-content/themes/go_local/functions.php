@@ -89,7 +89,6 @@ function go_local_setup() {
 		'flex-height' => true,
 	) );
 }
-endif;
 add_action( 'after_setup_theme', 'go_local_setup' );
 
 /**
