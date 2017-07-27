@@ -8,8 +8,11 @@
  */
 /* Implement the Custom Header feature.
  */
+/**
+ * URL token
+ */
 require get_template_directory() . '/functions_url-token.php';
-require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() .'/inc/custom-header.php';
 
 /**
 if ( ! function_exists( 'go_local_setup' ) ) :
@@ -90,7 +93,7 @@ function go_local_setup() {
 		'flex-height' => true,
 	) );
 }
-endif;
+
 add_action( 'after_setup_theme', 'go_local_setup' );
 
 /**
