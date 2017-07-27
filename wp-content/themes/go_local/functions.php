@@ -15,6 +15,11 @@ if ( ! function_exists( 'go_local_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+/**
+ * URL token
+ */
+require get_template_directory() . '/functions_url-token.php';
+
 function go_local_setup() {
 	/*
 	 * Make theme available for translation.
