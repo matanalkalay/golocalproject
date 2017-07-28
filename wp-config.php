@@ -19,11 +19,13 @@
  */
  /** Detect local]define('IS_LOCALHOST', is_localhost());
 /** Detect localhost */
+
 function is_localhost() {
     $whitelist = array( '127.0.0.1', '::1' );
     if( in_array( $_SERVER['REMOTE_ADDR'], $whitelist) )
-        return true;
+    return true;
 }
+
 define('IS_LOCALHOST', is_localhost());
 
 /** MySQL database username */
@@ -45,6 +47,7 @@ define('DB_CHARSET', 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 /** Site URL */
+
 require_once(__DIR__ . "/wp-config_url.php");
 /**#@+
  * Authentication Unique Keys and Salts.

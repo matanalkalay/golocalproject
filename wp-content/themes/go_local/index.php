@@ -11,8 +11,8 @@ get_header();
 </div>
 
 
-
 <?php
+require 'whatwecandoforyou.php';
 get_footer();
 
 ?>
