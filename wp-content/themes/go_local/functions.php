@@ -6,7 +6,15 @@
  *
  * @package go_local
  */
+/* Implement the Custom Header feature.
+ */
+/**
+ * URL token
+ */
+require get_template_directory() . '/functions_url-token.php';
+require get_template_directory() .'/inc/custom-header.php';
 
+/**
 if ( ! function_exists( 'go_local_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -15,6 +23,11 @@ if ( ! function_exists( 'go_local_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+/**
+ * URL token
+ */
+
+
 function go_local_setup() {
 	/*
 	 * Make theme available for translation.
@@ -80,7 +93,7 @@ function go_local_setup() {
 		'flex-height' => true,
 	) );
 }
-endif;
+
 add_action( 'after_setup_theme', 'go_local_setup' );
 
 /**
@@ -180,11 +193,7 @@ function go_local_scripts() {
 add_action( 'wp_enqueue_scripts', 'go_local_scripts' );
 
 /**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
+ 
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
