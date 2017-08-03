@@ -19,6 +19,8 @@
  */
  /** Detect local]define('IS_LOCALHOST', is_localhost());
 
+/** The name of the database for WordPress */
+define('DB_NAME', 'golocal_go-local');
 
 /** MySQL database username */
 define('DB_USER', 'golocal_go-local');
