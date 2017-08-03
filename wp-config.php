@@ -25,19 +25,7 @@ function is_localhost() {
         return true;
 }
 define('IS_LOCALHOST', is_localhost());
-// ** MySQL settings - You can get this info from your web host ** //
 
- /** Detect local]define('IS_LOCALHOST', is_localhost());
-/** Detect localhost */
-
-function is_localhost() {
-    $whitelist = array( '127.0.0.1', '::1' );
-    if( in_array( $_SERVER['REMOTE_ADDR'], $whitelist) )
-    return true;
-}
-
-
->>>>>>> 3188c9775c879442c4e28f8eb57358ac91ff1418
 /** The name of the database for WordPress */
 define('DB_NAME', 'golocal_go-local');
 

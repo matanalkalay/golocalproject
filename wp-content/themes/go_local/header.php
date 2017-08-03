@@ -5,6 +5,7 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<title><?php echo get_bloginfo('name'); ?> - <?php wp_title(); ?></title>
 	<?php wp_head(); ?>
+	<base href="<?= site_url() ?>">
 </head>
 <body <?php body_class('mybodyclass'); ?>>
 <div class="container">
