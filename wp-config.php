@@ -17,6 +17,7 @@
  *
  * @package WordPress
  */
+
 /** Detect localhost */
 function is_localhost() {
     $whitelist = array( '127.0.0.1', '::1' );
@@ -25,9 +26,22 @@ function is_localhost() {
 }
 define('IS_LOCALHOST', is_localhost());
 // ** MySQL settings - You can get this info from your web host ** //
+
+ /** Detect local]define('IS_LOCALHOST', is_localhost());
+/** Detect localhost */
+
+function is_localhost() {
+    $whitelist = array( '127.0.0.1', '::1' );
+    if( in_array( $_SERVER['REMOTE_ADDR'], $whitelist) )
+    return true;
+}
+
+
+>>>>>>> 3188c9775c879442c4e28f8eb57358ac91ff1418
 /** The name of the database for WordPress */
 define('DB_NAME', 'golocal_go-local');
 
+define('IS_LOCALHOST', is_localhost());
 
 /** MySQL database username */
 define('DB_USER', 'golocal_go-local');
@@ -46,10 +60,11 @@ define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+/** Site URL */
+
 
 /** Site URL */
 require_once(__DIR__ . "/wp-config_url.php");
-
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -60,6 +75,11 @@ require_once(__DIR__ . "/wp-config_url.php");
  *
  * @since 2.6.0
  */
+/** Detect localhost */
+
+/** Site URL */
+
+
 define('AUTH_KEY',         'p1~%=!W{%8#Z7<P];S}:eRQZuK~Bn&wMT` u:o!un]cXx52cq`&([Nkg>[BLv~XU');
 
 define('SECURE_AUTH_KEY',  'Y(6{Dz~b_@u^ib~$>RQ@ `xJNK&0c<;wk@x==nnDPq>-9|tQ[wF>;@.yd:4oU}]-');
