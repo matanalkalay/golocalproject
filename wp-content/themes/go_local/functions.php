@@ -143,6 +143,8 @@ add_action('init', 'register_my_menus');
 function my_theme_enqueue_styles() {
 
 	wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+	wp_enqueue_style('parent-style', get_template_directory_uri() . '/template-page/welcome-section1.css');
+
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles');
 function reg_scripts() {
