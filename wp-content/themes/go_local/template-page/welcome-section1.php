@@ -15,30 +15,39 @@ Template Name: welcome section 1
 		color: white;
     display: inline-block;
     position: absolute;
-    bottom: 10%;
-    right: 10%;
+    top:140px ;
+    right: 8%;
 	}
 	.button-section1 {
 		display: inline-block;
 	}
 	.button-section1 button {
-	padding-left: 45%;
+	padding-left: 40%;
     padding-right: 40%;
     border: 1px solid #EDA031;
     border-radius: 50px;
+	}
+	.addline-text h1 {
+	text-shadow: 2px 2px #685a5a;
 	}
 </style>
 
 <body>
 		<div class="section1">
-			<div class="addline-text">
-				<h1><b>ברוכים הבאים ל GO LOCAL</b></h1><br>
-				<h1><b>פה ההזדמנות שלך</b></h1><br>
-				<h1><b>לפתח את ההיטק המקומי</b></h1><br>
-				<div class="button-section1">
-				<button href="#" type="button" class="btn btn-warning btn-lg">קרא עוד</button>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="addline-text">
+						<h1><b>ברוכים הבאים ל GO LOCAL</b></h1><br>
+						<h1><b>פה ההזדמנות שלך</b></h1><br>
+						<h1><b>לפתח את ההיטק המקומי</b></h1><br>
+						<div class="button-section1">
+						<button href="#" type="button" class="btn btn-warning btn-lg">קרא עוד</button>
+						</div>
+					</div>
 				</div>
 			</div>
+		</div>	
 		</div>
 </body>
 		
