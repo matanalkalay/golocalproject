@@ -34,7 +34,6 @@ define('IS_LOCALHOST', is_localhost());
 /** MySQL database username */
 define('DB_USER', 'golocal_go-local');
 
-
 /** MySQL database password */
 define('DB_PASSWORD', '{]L4sL^PIHBX');
 

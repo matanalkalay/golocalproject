@@ -1,14 +1,9 @@
 <?php
 get_header();
 ?>
-
-
-
-<div class="container"> 
-  <div class="row">
- hello worlddddd
-גדלךגחדשךלדשגחך  </div>
-</div>
+<?php 
+require 'template-page/welcome-section1.php';
+ ?>
 
 
 <?php
