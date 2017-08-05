@@ -14,12 +14,18 @@ Template Name: about us section 1
 	    margin-top: 10%;
 	    margin-bottom: 10%;
 	}
+	.title-text {
+		color: white;
+	    border-bottom: 1px solid white;
+	    display: inline-block;
+	    margin-right: 50%;
+	}
 	.box-text {
 		background-color: #ED9C28;
 	    box-shadow: 2px 2px 5px #888888;
 	    color: white;
 	    margin-top: 5%;
-	    margin-bottom: 3%;
+	    margin-bottom: 5%;
 	    border: 1px solid #ED9C28;
 	    border-radius: 15px;
 	    padding: 3%;
@@ -28,11 +34,19 @@ Template Name: about us section 1
 	.just-text {
 		color: white;
     	font-size: medium;
+    	margin-bottom: 2%;
 	}
 </style>
 <body>
 	<div class="section2">
 		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="title-text">
+						<h1>אודות</h1>
+					</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
 					<img src="http://localhost/golocalproject/wp-content/uploads/2017/08/startup-593327_1920-min.jpg">
