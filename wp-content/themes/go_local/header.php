@@ -8,23 +8,38 @@
 	<base href="<?= site_url() ?>">
 </head>
 <body <?php body_class('mybodyclass'); ?>>
-<div class="container">
-<div class="row">
+
 <header>
-	<?php
-	$header_menu_name = is_user_logged_in() ? 'primary' : 'guest';
-    if(has_nav_menu($header_menu_name)) {
-		$header_menu = array(
-      'theme_location' => $header_menu_name,
-      'container' => '',
-      'container_class' => '',
-      'container_id' => '',
-      'menu_class' => '',
-      'echo' => true,
-		);
-		wp_nav_menu($header_menu);
-    }
-	?>
+<div class="container">
+	<div class="row">
+		<!-- header -->
+		<div class="header text-right">
+			<div class='logo'>
+			<img src="<?php echo site_url('/wp-content/uploads/2017/08/logo.jpg' ); ?>">
+			</div>
+			<div class="menu">
+				
+					<?php
+					$header_menu_name = is_user_logged_in() ? 'primary' : 'guest';
+				    if(has_nav_menu($header_menu_name)) {
+						$header_menu = array(
+				      'theme_location' => $header_menu_name,
+				      'container' => '',
+				      'container_class' => '',
+				      'container_id' => '',
+				      'menu_class' => '',
+				      'echo' => true,
+						);
+						wp_nav_menu($header_menu);
+				    }
+					?>
+					
+
+			</div>
+		</div>
+	<!-- end  header-->
+</div>
+</div>	
 </header>
-</div>
-</div>
+
+	
