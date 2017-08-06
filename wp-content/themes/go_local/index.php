@@ -10,8 +10,11 @@ require 'template-page/about-us-section2.php';
  <?php 
 require 'template-page/three-column-section3.php';
  ?>
+<?php 
+require 'template-page/video-section4.php';
+ ?>
 <?php
-require 'whatwecandoforyou.php';
+
 get_footer();
 
 ?>

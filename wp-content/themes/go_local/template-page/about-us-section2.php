@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: about us section 1
+Template Name: about us section 2
 */
 ?>
 <style type="text/css">
