@@ -49,7 +49,7 @@ Template Name: about us section 2
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
-					<img src="http://localhost/golocalproject/wp-content/uploads/2017/08/startup-593327_1920-min.jpg">
+					<img src="<?php echo site_url() . '/wp-content/uploads/2017/08/startup-593327_1920-min.jpg'; ?>">
 				</div>
 				<div class="col-lg-8 col-md-6">
 					<div class="row">
