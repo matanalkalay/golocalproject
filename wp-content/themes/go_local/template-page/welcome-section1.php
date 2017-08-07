@@ -6,7 +6,6 @@ Template Name: welcome section 1
 <style type="text/css">
 
 	.section1 {
-	background-image: url(http://localhost/golocalproject/wp-content/uploads/2017/08/apple-1841281_1920-min.jpg);
 	background-repeat: round;
     height: 500px;
     position: relative;
@@ -33,7 +32,7 @@ Template Name: welcome section 1
 </style>
 
 <body>
-		<div class="section1">
+		<div class="section1"  style="background-image: url(<?php echo site_url() . '/wp-content/uploads/2017/08/apple-1841281_1920-min.jpg';?>)">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
