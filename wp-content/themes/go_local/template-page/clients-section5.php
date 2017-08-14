@@ -10,6 +10,8 @@ Template Name: clients section 5
 }
 .testimonials{
   background-color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .item i{
   color: #EDA031;

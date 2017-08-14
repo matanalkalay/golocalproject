@@ -34,19 +34,10 @@ Template Name: video section 4
 		<div class="container">
 			<div class="row">
 				<div class="video-area col-sm-12">
-					<?php 
-					$catquery = new WP_Query( 'video=6&posts_per_page=1' ); 
-					?>
-					<ul>
-					<?php 
-						while($catquery->have_posts()) : $catquery->the_post(); 
-					?>
-					<li><p href="#" rel="bookmark">
-					<?php the_content(); ?>
-					</p></li>
-					<?php endwhile;
-					wp_reset_postdata();
-					?>
+					<?php query_posts('cat=6'); ?>
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					   <?php the_content(); ?>
+					<?php endwhile; endif; ?>
 				</div>
 			</div>
 		</div>

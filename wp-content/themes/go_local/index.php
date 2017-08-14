@@ -16,6 +16,15 @@ require 'template-page/video-section4.php';
  <?php 
 require 'template-page/clients-section5.php';
  ?>
+ <?php 
+require 'template-page/orange-section6.php';
+ ?>
+ <?php 
+require 'template-page/projects-section7.php';
+ ?>
+ <?php 
+require 'template-page/contact-us-section8.php';
+ ?>
 <?php
 get_footer();
 ?>
