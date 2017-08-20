@@ -1,9 +1,8 @@
 <?php 
-/* Template Name: תבנית פרוייקטים */ 
+/* Template Name: בחינת אנגולר */ 
  
-get_header(); ?>
-
-<link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+ get_header(); ?>
+ <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
  <style type="text/css">
 
 .allProjets{
