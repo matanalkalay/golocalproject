@@ -95,7 +95,44 @@ function go_local_setup() {
 }
 
 add_action( 'after_setup_theme', 'go_local_setup' );
-
+function project_custom_init() {
+      $labels = array(
+          'name' => 'פרוייקטים',
+          'singular_name' => 'פרוייקט',
+          'add_new' => 'הוסף פרוייקט חדש',
+          'add_new_item' => 'הוסף פרוייקט חדש',
+          'edit_item' => 'ערוך פרוייקט',
+          'new_item' => 'פרוייקט חדש',
+          'all_items' => 'כל הפרוייקטים',
+          'view_item' => 'הצג פרוייקט',
+          'search_items' => 'חפש פרוייקט',
+          'not_found' =>  'לא נמצא פרוייקט',
+          'not_found_in_trash' => 'לא נמצא פרוייקט בפח', 
+          'parent_item_colon' => '',
+          'menu_name' => 'פרוייקטים',
+          );
+ 
+      $args = array(
+          'labels' => $labels,
+          'exclude_from_search' => false,
+          'public' => true,
+          'publicly_queryable' => true,
+          'show_ui' => true, 
+          'show_in_menu' => true, 
+          'query_var' => true,
+          'rewrite' => array( 'slug' => 'פרוייקט' ),
+          'capability_type' => 'post',
+          'has_archive' => true, 
+          'hierarchical' => false,
+          'taxonomies' => array('category'),
+          'menu_position' => null,
+          'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
+          ); 
+ 
+        register_post_type( 'project', $args );
+    }
+add_action( 'init', 'project_custom_init');
+ 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -220,4 +257,5 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+
 }

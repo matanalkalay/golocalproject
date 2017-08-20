@@ -139,3 +139,16 @@ ul{
 li {
 	display: inline;
 }
+.singleProject{
+	display: inline-block;
+}
+.project_img{
+	width: 100px;
+
+}
+.project_img img{
+	width: 100px;
+}
+.project_name{
+	font-size: 100px;
+}
