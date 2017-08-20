@@ -6,3 +6,14 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # otherwise forward the request to index.php
 RewriteRule . index.php
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /golocalproject/golocalproject/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /golocalproject/golocalproject/index.php [L]
+</IfModule>
+
+# END WordPress
