@@ -15,7 +15,7 @@
 		<!-- header -->
 		<div class="header text-right">
 			<div class='logo'>
-			<img src="<?php echo site_url('/wp-content/uploads/2017/08/logo.jpg' ); ?>">
+				<a href="#"><img src="<?php echo site_url('/wp-content/uploads/2017/08/logo.jpg' ); ?>"></a>
 			</div>
 			<div class="menu">
 				

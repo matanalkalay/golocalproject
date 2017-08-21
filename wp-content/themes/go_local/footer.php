@@ -17,12 +17,10 @@
 <footer>
 <div class="container">
   <div class="row">
-     <div class="infoFooter col-lg-6 col-md-6 col-sm-6 col-xs-6">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-youtube" aria-hidden="true"></i>
-        <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12">רחוב חלקיקי האור 16,ירוחם </p> <p class="col-lg-12 col-md-12    col-sm-12 col-xs-12">info@golocal.co.il </p><p class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 972-34532345</p> 
-     </div>
-     <div class="menuFooter col-lg-6 col-md-6 col-sm-6 col-xs-6">
+  <div class="rights-reserved col-xs-12 col-lg-2">
+        <p>All Rights Reserved Golocal 2017</p>
+  </div>
+     <div class="menuFooter col-xs-12 col-lg-8">
      <?php
 	 $header_menu_name = is_user_logged_in() ? 'primary' : 'guest';
        if(has_nav_menu($header_menu_name)) {
@@ -38,7 +36,11 @@
       }
 	?>
 	</div>
-<p>האתר פותח על ידי חניכי התוכנית: טל ריפטין ,לירון ציבוטרו ומתן אלקלעי</p>
+  <div class="infoFooter col-xs-12 col-lg-2">
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+     </div>
    </div>
 </div>
 	

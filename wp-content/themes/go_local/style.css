@@ -26,7 +26,7 @@ html {
 	-ms-text-size-adjust:     100%;
 	/*-ms-text-size-adjust:     100%;*/
 }
-body {
+/*body {
 	direction: rtl;
 
 }
@@ -42,29 +42,7 @@ text-decoration: none;
 }
 .tester{
 	color: blue;
-}
-footer{
-background-color: black;
-color: #F2F2F2;
-}
-.menuFooter{	
-float: right;
-}
-.menuFooter ul li{
-list-style: none;	
-}
-.menuFooter ul li a{
-	color: #F2F2F2;
-}
-.infoFooter{
-	text-align: left;
-	float: left;
-}
-.fa-facebook{
-	color: #76C4A4;
-}.fa-youtube{
-	color: #76C4A4;
-}
+}*/
 /*menu trynes*/
 body {
 	direction: rtl;
@@ -139,3 +117,106 @@ ul{
 li {
 	display: inline;
 }
+footer{
+background-color: white;
+color: black;
+padding-top: 5%;
+padding-bottom: 5%;
+}
+.menuFooter{	
+height: 50px;
+background-color: #ffffff;
+text-align: center;
+}
+.menuFooter ul li{
+list-style: none;	
+}
+.menuFooter ul li a{
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	color: #081f39;
+	margin:12px 0 12px 20px;
+    text-decoration:none;
+}
+.menuFooter ul li a:hover {
+	border-bottom: 2px solid #42BCB0;
+}
+.infoFooter{
+	text-align: center;
+}
+.fa-facebook-official {
+    background-color: #00bfb6;
+    border: 1px solid #00bfb6;
+    border-radius: 50%;
+    color: white;
+    padding: 8%;
+}
+.fa-twitter {
+background-color: #00bfb6;
+    border: 1px solid #00bfb6;
+    border-radius: 50%;
+    color: white;
+    padding: 8%;
+}
+.fa-linkedin {
+	background-color: #00bfb6;
+    border: 1px solid #00bfb6;
+    border-radius: 50%;
+    color: white;
+    padding: 8%;
+}
+.rights-reserved {
+	text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+	.menuFooter {
+		display: none;
+	}
+	.fa-facebook-official {
+    background-color: #00bfb6;
+    border: 1px solid #00bfb6;
+    border-radius: 50%;
+    color: white;
+    padding: 4%;
+	}
+	.fa-twitter {
+	background-color: #00bfb6;
+	    border: 1px solid #00bfb6;
+	    border-radius: 50%;
+	    color: white;
+	    padding: 4%;
+	}
+	.fa-linkedin {
+		background-color: #00bfb6;
+	    border: 1px solid #00bfb6;
+	    border-radius: 50%;
+	    color: white;
+	    padding: 4%;
+	}
+}
+@media screen and (min-width: 650px) and (max-width: 1200px) {
+	.fa-facebook-official {
+    background-color: #00bfb6;
+    border: 1px solid #00bfb6;
+    border-radius: 50%;
+    color: white;
+    padding: 2%;
+	}
+	.fa-twitter {
+	background-color: #00bfb6;
+	    border: 1px solid #00bfb6;
+	    border-radius: 50%;
+	    color: white;
+	    padding: 2%;
+	}
+	.fa-linkedin {
+		background-color: #00bfb6;
+	    border: 1px solid #00bfb6;
+	    border-radius: 50%;
+	    color: white;
+	    padding: 2%;
+	}
+}
+/*responsive menu*/
