@@ -141,6 +141,7 @@ list-style: none;
 }
 .menuFooter ul li a:hover {
 	border-bottom: 2px solid #42BCB0;
+	padding-bottom: 5%;
 }
 .infoFooter{
 	text-align: center;
