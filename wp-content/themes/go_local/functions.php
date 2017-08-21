@@ -259,6 +259,43 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 
 }
+function senior_custom_init() {
+      $labels = array(
+          'name' => 'בוגרים',
+          'singular_name' => 'בוגרים',
+          'add_new' => 'הוסף בוגר חדש',
+          'add_new_item' => 'הוסף בוגר חדש',
+          'edit_item' => 'ערוך בוגר',
+          'new_item' => 'בוגר חדש',
+          'all_items' => 'כל הבוגרים',
+          'view_item' => 'הצג בוגר',
+          'search_items' => 'חפש בוגרים',
+          'not_found' =>  'לא נמצא בוגר',
+          'not_found_in_trash' => 'לא נמצא בוגר בפח', 
+          'parent_item_colon' => '',
+          'menu_name' => 'בוגרים',
+          );
+ 
+      $args = array(
+          'labels' => $labels,
+          'exclude_from_search' => false,
+          'public' => true,
+          'publicly_queryable' => true,
+          'show_ui' => true, 
+          'show_in_menu' => true, 
+          'query_var' => true,
+          'rewrite' => array( 'slug' => 'בוגר' ),
+          'capability_type' => 'post',
+          'has_archive' => true, 
+          'hierarchical' => false,
+          'taxonomies' => array('category'),
+          'menu_position' => null,
+          'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
+          ); 
+ 
+        register_post_type( 'senior', $args );
+    }
+add_action( 'init', 'senior_custom_init');
 function my_scripts() {
 	
 	wp_enqueue_script(
