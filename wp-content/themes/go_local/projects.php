@@ -164,7 +164,9 @@ body {
  </style>
  <div id="primary" class="content-area">
     <main id="main" class="site-main">
+    <
     <?php 
+    require 'section3.php';
         $args = array(
         'post_type' => array( 'project' )
       );
