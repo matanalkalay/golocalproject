@@ -30,9 +30,11 @@ li{
 **/
 .section7 {
   background-color: #15C0AB;
+  margin-top: -2%;
 }
 .card{
-  
+  margin-left: 5%;
+  width: 300px;
    display: inline-block;
   -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
    transform: translateX(-50%) translateY(-50%) translateZ(0);
@@ -155,6 +157,11 @@ li{
 
 </style>
 <body>
+<div class="section7">
+                  <div class="">
+                     <div class="">
+                     <h2>הפרויקטים שלנו</h2>
+                       <div class="allProjets">
 
 	         
                   <?php 
@@ -167,17 +174,12 @@ li{
                
                   <?php if ( have_posts() ) : ?>
 
-                <div class="section7">
-                  <div class="container">
-                     <div class="row">
-                     <h2>הפרויקטים שלנו</h2>
-                       <div class="allProjets col-lg-12">
-
+                
                     <?php 
                     // Start the loop.
                      $i = 1; while (have_posts() && $i < 4) : the_post(); ?>
                    
-      <article class="col-lg-4 card">
+      <article class="card">
  
   
                  <?php
