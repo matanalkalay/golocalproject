@@ -8,6 +8,7 @@ get_header(); ?>
 
 .allProjets{
 margin-top: 20%;
+background-color: #06BFB6;
 }
 
 body{
@@ -232,4 +233,5 @@ body {
     ?>
 </main>
 </div>
+<?php require 'contact-us-section8.php'; ?>
 <?php get_footer(); ?>

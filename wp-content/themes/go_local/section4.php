@@ -6,7 +6,8 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
   #section4 {
-      background-image: url("/images/comp.jpg");
+      background-image: url("background-image: url(<?php echo site_url() . '/wp-content/uploads/2017/08/Freepika.jpg';?>")
+      
       
     }
     #section4 .circle1 {
