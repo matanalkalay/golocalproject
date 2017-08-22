@@ -7,12 +7,7 @@ Template Name: projects section 7
 <style type="text/css">
 
 .allProjets{
-background-color: #15C0AB;
-}
-
-
-body{
-  text-align:right;
+margin-top: 28%;
 }
  h2{
 text-align: center;
@@ -24,17 +19,6 @@ li{
 /**
 * VARIABLES
 **/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-* {
-  box-sizing: border-box;
-}
-
-body {
-  
-  font-family: "Open Sans";
-  font-size: 16px;
-  background-color: #eee;
-}
 
 /**
 * Title
@@ -44,11 +28,12 @@ body {
 /**
 * CARD
 **/
-
+.section7 {
+  background-color: #15C0AB;
+}
 .card{
   
    display: inline-block;
-  margin-top: 3px;
   -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
    transform: translateX(-50%) translateY(-50%) translateZ(0);
   background-color:white;
@@ -170,27 +155,29 @@ body {
 
 </style>
 <body>
-	<div class="container-fluid">
-	<div class="row">
-	<div class="allProjets col-lg-12">
-	<h2>הפרויקטים שלנו</h2>
-    <?php 
- 
-        $args = array(
-        'post_type' => array( 'project' )
-      );
-      query_posts( $args );
-    ?>
- 
-    <?php if ( have_posts() ) : ?>
-   
-      
- 
-      <?php 
-      // Start the loop.
-       $i = 1; while (have_posts() && $i < 4) : the_post(); ?>
-     
-      <article class="card">
+
+	         
+                  <?php 
+               
+                      $args = array(
+                      'post_type' => array( 'project' )
+                    );
+                    query_posts( $args );
+                  ?>
+               
+                  <?php if ( have_posts() ) : ?>
+
+                <div class="section7">
+                  <div class="container">
+                     <div class="row">
+                     <h2>הפרויקטים שלנו</h2>
+                       <div class="allProjets col-lg-12">
+
+                    <?php 
+                    // Start the loop.
+                     $i = 1; while (have_posts() && $i < 4) : the_post(); ?>
+                   
+      <article class="col-lg-4 card">
  
   
                  <?php
@@ -208,10 +195,9 @@ body {
     <h2 class="card__title"><a href="#">שם האתר: <?php echo $project_name ?></a></h2>
     <div class="card__subtitle">משו שנרשום פה </div>
     <p class="card__description">
-   </p>
-    <p>שם הלקוח: <?php echo $client_name ?></p>
-    <p>סוג האתר: <?php echo $website_type ?></p>
-    <p>שמות המפתחים: <?php echo $developers_name ?></p>
+      <p>שם הלקוח: <?php echo $client_name ?></p>
+      <p>סוג האתר: <?php echo $website_type ?></p>
+      <p>שמות המפתחים: <?php echo $developers_name ?></p>
     </p>
   </div>
   </article>
@@ -236,6 +222,6 @@ body {
  
     endif;
     ?>
-</main>
-</div>
+
+
 </body>
