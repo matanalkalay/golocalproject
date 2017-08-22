@@ -5,7 +5,10 @@ Template Name: projects section 7
 ?>
 
 <style type="text/css">
-
+.head-project {
+  position: relative;
+    top: 70px;
+}
 .allProjets{
 margin-top: 28%;
 }
@@ -66,7 +69,7 @@ li{
 }
 .card__thumb img {
   display: block;
-  width: 254px;
+  width: 100%;
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -158,9 +161,10 @@ li{
 </style>
 <body>
 <div class="section7">
-                  <div class="">
-                     <div class="">
+                 
+                     <div class="head-project">
                      <h2>הפרויקטים שלנו</h2>
+                     </div>
                        <div class="allProjets">
 
 	         
@@ -210,8 +214,7 @@ li{
  <?php $i++; endwhile; ?>
  
       </div>
-</div>
- </div>
+
  </div>
 
     
