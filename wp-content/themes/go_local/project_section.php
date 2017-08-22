@@ -160,6 +160,30 @@ body {
           transition-delay: 0.2s;
 }
 
+
+.myButton {
+  background-color:#ffffff;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:#000000;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+  background-color:#5cbf2a;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
  </style>
  <div id="primary" class="content-area">
     <main id="main" class="site-main">
@@ -190,6 +214,8 @@ body {
                 $client_name = get_field('client_name');
                 $website_type = get_field('website_type');
                 $developers_name = get_field('developers_name');
+                $project_description = get_field('project_description');
+                $kisor_web = get_field('kisor_web');
                 ?>  
   <div class="card__thumb">
     <a href="#"> <img src="<?php echo $project_img['url']; ?>" alt="<?php echo $project_img['alt']; ?>" /></a>
@@ -199,10 +225,12 @@ body {
     <h2 class="card__title"><a href="#">שם האתר: <?php echo $project_name ?></a></h2>
     <div class="card__subtitle">משו שנרשום פה </div>
     <p class="card__description">
+    <?php echo  $project_description ?>
    </p>
     <p>שם הלקוח: <?php echo $client_name ?></p>
     <p>סוג האתר: <?php echo $website_type ?></p>
     <p>שמות המפתחים: <?php echo $developers_name ?></p>
+ <a href="<?php echo $kisor_web ?>" class="myButton">קישור לפרויקט</a>
     </p>
   </div>
   </article>
