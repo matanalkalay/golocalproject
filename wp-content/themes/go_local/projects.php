@@ -52,6 +52,9 @@ body {
   margin-left: 5%;
   margin-bottom: 5%;
   width: 300px;
+  height: 500px;
+  border: 1px solid #06BFB6;
+    border-radius: 25px;
    display: inline-block;
   -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
    transform: translateX(-50%) translateY(-50%) translateZ(0);
