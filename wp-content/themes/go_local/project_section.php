@@ -224,9 +224,7 @@ body {
     <div class="card__category"><a href="#"><?php echo $website_type ?></a></div>
     <h2 class="card__title"><a href="#">שם האתר: <?php echo $project_name ?></a></h2>
     <div class="card__subtitle">משו שנרשום פה </div>
-    <p class="card__description">
-    <?php echo  $project_description ?>
-   </p>
+    
     <p>שם הלקוח: <?php echo $client_name ?></p>
     <p>סוג האתר: <?php echo $website_type ?></p>
     <p>שמות המפתחים: <?php echo $developers_name ?></p>
