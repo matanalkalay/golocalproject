@@ -196,7 +196,21 @@ body {
   position:relative;
   top:1px;
 }
+@media screen and (max-width: 650px) {
+  .allProjets{
+padding-top: 50%;
+}
+.project-area{
+  background-color: #06BFB6;
+  padding-top: 1%;
+}
+.head-title {
+  text-align: center;
+ padding-bottom: 2%;
+ text-shadow: 2px 2px 5px #9E9E9E;
+}
 
+}
 
  </style>
     <?php 

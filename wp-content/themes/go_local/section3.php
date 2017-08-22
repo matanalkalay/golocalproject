@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		#section3 {
-			background-image: url(<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_p3.png';?>);
+			background-color: #ED9C28;
 			color: white;
 		}
 		.section-heading {
