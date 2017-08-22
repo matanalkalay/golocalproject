@@ -454,8 +454,5 @@ aside:hover ul li:nth-child(3) {
  
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
- 
-<br>
-<br>
-<br>
+ <?php require 'template-page/contact-us-section8.php'; ?>
 <?php get_footer(); ?>
