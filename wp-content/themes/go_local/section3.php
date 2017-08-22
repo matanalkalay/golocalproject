@@ -6,9 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		#section3 {
-			background-image: url("/images/startup-593327_1920-min.jpg");
-			background-color: orange;
-		
+			background-image: url(<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_p3.png';?>);
+			color: white;
 		}
 		.section-heading {
 		display: inline-block;
