@@ -7,8 +7,16 @@ get_header(); ?>
  <style type="text/css">
 
 .allProjets{
-margin-top: 20%;
-background-color: #06BFB6;
+padding-top: 25%;
+}
+.project-area{
+  background-color: #06BFB6;
+  padding-top: 1%;
+}
+.head-title {
+  text-align: center;
+ padding-bottom: 2%;
+ text-shadow: 2px 2px 5px #9E9E9E;
 }
 
 body{
@@ -41,8 +49,10 @@ body {
 **/
 
 .card{
+  margin-left: 5%;
+  margin-bottom: 5%;
+  width: 300px;
    display: inline-block;
-  margin-top: 3px;
   -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
    transform: translateX(-50%) translateY(-50%) translateZ(0);
   background-color:white;
@@ -73,7 +83,7 @@ body {
 }
 .card__thumb img {
   display: block;
-  width: 254px;
+  width: 100%;
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -184,10 +194,8 @@ body {
   top:1px;
 }
 
+
  </style>
- <div id="primary" class="content-area">
-    <main id="main" class="site-main">
-    <
     <?php 
     require 'section3.php';
         $args = array(
@@ -197,9 +205,11 @@ body {
     ?>
  
     <?php if ( have_posts() ) : ?>
-   <div class="container">
-    <div class="row"> 
-    <div class="allProjets col-lg-12">  
+      <div class="project-area">
+   <div class="head-title">
+      <h2>הפרויקטים שלנו</h2>
+      </div> 
+    <div class="allProjets">  
  
       <?php 
       // Start the loop.
@@ -243,8 +253,8 @@ body {
       ?>
       </div>
 </div>
- </div>
- </div>
+ 
+ 
 
     
  
@@ -256,7 +266,6 @@ body {
  
     endif;
     ?>
-</main>
 </div>
 <?php require 'template-page/contact-us-section8.php'; ?>
 <?php get_footer(); ?>
