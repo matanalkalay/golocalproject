@@ -191,20 +191,23 @@ body {
                 $client_name = get_field('client_name');
                 $website_type = get_field('website_type');
                 $developers_name = get_field('developers_name');
+                $project_description = get_field('project_description');
+                $kisor_web = get_field('kisor_web');
                 ?>  
   <div class="card__thumb">
     <a href="#"> <img src="<?php echo $project_img['url']; ?>" alt="<?php echo $project_img['alt']; ?>" /></a>
   </div >
+
   <div class="card__body">
     <div class="card__category"><a href="#"><?php echo $website_type ?></a></div>
     <h2 class="card__title"><a href="#">שם האתר: <?php echo $project_name ?></a></h2>
-    <div class="card__subtitle">משו שנרשום פה </div>
+    <div class="card__subtitle"><?php echo  $project_description ?></div>
     <p class="card__description">
-   </p>
-    <p>שם הלקוח: <?php echo $client_name ?></p>
-    <p>סוג האתר: <?php echo $website_type ?></p>
-    <p>שמות המפתחים: <?php echo $developers_name ?></p>
+      <p>שם הלקוח: <?php echo $client_name ?></p>
+      <p>סוג האתר: <?php echo $website_type ?></p>
+      <p>שמות המפתחים: <?php echo $developers_name ?></p>
     </p>
+    <a href="<?php echo $kisor_web ?>" class="myButton">קישור לפרויקט</a>
   </div>
   </article>
                
