@@ -191,6 +191,7 @@ body {
 }
 .myButton:hover {
   background-color:#5cbf2a;
+  text-decoration: none;
 }
 .myButton:active {
   position:relative;
