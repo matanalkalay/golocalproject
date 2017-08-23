@@ -6,9 +6,13 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
   #section4 {
-      background-image: url("background-image: url(<?php echo site_url() . '/wp-content/uploads/2017/08/Freepika.jpg';?>")
+     /* background-image: url("background-image: url(<?php echo site_url() . '/wp-content/uploads/2017/08/Freepika.jpg';?>")*/
+         background-color: #F5A649;
       
       
+    }
+    .section-heading {
+      margin-bottom: 4%;
     }
     #section4 .circle1 {
       margin-bottom: 0%!important;
@@ -59,14 +63,17 @@
   #section4 .circle1 i {
     margin-top: 35%;
       margin-right: 20%;
+      font-size: -webkit-xxx-large;
   }
   #section4 .circle2 i {
     margin-top: 35%;
       margin-right: 13%;
+      font-size: -webkit-xxx-large;
   }
   #section4 .circle3 i {
     margin-top: 35%;
       margin-right: 13%;
+      font-size: -webkit-xxx-large;
   }
   </style>
 </style>

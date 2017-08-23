@@ -6,10 +6,12 @@ get_header(); ?>
 
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-
-header img {
+.allSeniors {
+  margin-bottom: 10%;
+}
+.top-area-profile img {
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 28px auto;
   display: block;
   width: 200px;
   border: 5px solid #fff;
@@ -38,16 +40,16 @@ aside:hover {
   box-shadow: 0 0 70px 10px #fff;
 }
 
-aside:hover header img {
+aside:hover .top-area-profile img {
   animation: profile_image 2000ms linear both;
   animation-delay: 0.5s;
 }
 
-header {
+.top-area-profile {
   text-align: center;
 }
 
-header h2 {
+.top-area-profile h2 {
   position: relative;
   text-align: center;
   color: #fff;
@@ -61,14 +63,14 @@ header h2 {
   border-bottom: 1px solid #fff;
 }
 
-aside:hover header h2 {
+aside:hover .top-area-profile h2 {
   margin-top: 0px;
   outline: 0 solid #fff;
   border-top: 0px solid #fff;
   border-bottom: 1px solid #fff;
 }
 
-header h2 {
+.top-area-profile h2 {
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
@@ -99,24 +101,43 @@ aside:hover .profile-bio {
 
 .profile-social-links {
   position: relative;
-  margin-top: -440px;
-  margin-left: -100px;
+    margin-top: -120%;
+    margin-right: 75%;
   list-style-type: none;
   opacity: 0;
   transition: all ease 0.5s;
+
 }
 
 aside:hover .profile-social-links {
   margin-left: -30px;
   opacity: 1;
 }
-
+.profile-social-links li {
+  display: list-item;
+    text-align: -webkit-match-parent;
+    margin-bottom: 4px;
+}
 .profile-social-links li img {
   width: 30px;
   background: #fff;
   border-radius: 50%;
   padding: 5px;
 }
+.profile-social-links a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;
+    text-decoration: underline;
+}
+.senior_profile {
+  margin-bottom: 4%;
+}
+.allSeniors h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
 /*PROFILE IMAGE ANIMATE */
 
 @keyframes profile_image {
@@ -201,7 +222,7 @@ aside:hover .profile-social-links {
 }
 /*NAME ANIMATE */
 
-aside:hover header h2 {
+aside:hover .top-area-profile h2 {
   animation: name_and_job 1500ms linear both;
   animation-delay: 0.4s;
 }
@@ -267,17 +288,17 @@ aside:hover header h2 {
 }
 
 aside:hover ul li:first-child {
-  animation: social_animation 2000ms ease-in-out both;
+  animation: social_animation 1000ms ease-in-out both;
   animation-delay: 0.75s;
 }
 
 aside:hover ul li:nth-child(2) {
-  animation: social_animation 2000ms ease-in-out both;
+  animation: social_animation 1000ms ease-in-out both;
   animation-delay: 1s;
 }
 
 aside:hover ul li:nth-child(3) {
-  animation: social_animation 2000ms ease-in-out both;
+  animation: social_animation 1000ms ease-in-out both;
   animation-delay: 1.25s;
 }
 
@@ -341,9 +362,6 @@ aside:hover ul li:nth-child(3) {
   }
 }
 </style>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
- 
 		<?php 
 		require 'section4.php';
 		    $args = array(
@@ -353,51 +371,55 @@ aside:hover ul li:nth-child(3) {
 		?>
  
 		<?php if ( have_posts() ) : ?>
- <div class="container">
-    <div class="row">
-		<div class="allSeniors">	
+     
+      <div class="allSeniors">
+         <h2>הבוגרים שלנו</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">  
  
-			<?php 
-			// Start the loop.
-			while ( have_posts() ) : the_post(); ?>
-
-					
-								<?php
+      <?php 
+      // Start the loop.
+      while ( have_posts() ) : the_post(); ?>
+ <div class="col-lg-4 senior_profile">
+         <!-- <div class="container">
+    <div class="row"> -->
+          
+                <?php
  
-								$senior_image = get_field('senior_img');
-								$senior_name = get_field('senior_name');
-								$senior_class = get_field('senior_class');
-								$senior_city = get_field('senior_city');
-								$senior_projects=get_field('senior_projects');
-								
+                $senior_image = get_field('senior_img');
+                $senior_name = get_field('senior_name');
+                $senior_class = get_field('senior_class');
+                $senior_city = get_field('senior_city');
+                $senior_projects=get_field('senior_projects');
+                
  
-								?>
- <div class="singleSenior">
- <aside class="profile-card">
+                ?>
+            <div class="singleSenior">
+                <aside class="profile-card">
 
-  <header>
+                    <div class="top-area-profile">
 
-    <!-- here’s the avatar -->
-    <img class="senior_img" src="<?php echo $senior_image['url']; ?>" alt="<?php echo $senior_image['alt']; ?>" />
+                        <!-- here’s the avatar -->
+                        <img class="senior_img" src="<?php echo $senior_image['url']; ?>" alt="<?php echo $senior_image['alt']; ?>" />
 
-    <!-- the username -->
-    <h2><?php echo  $senior_name ;?></h2>
-<br>
-  
-    <h2>- Full Stack Web Developer -</h2>
+                          <!-- the username -->
+                          <h2><?php echo  $senior_name ;?></h2>
+                      <br>
+                        
+                          <h2>- Full Stack Web Developer -</h2>
 
-  </header>
+                    </div>
 
-  <!-- bit of a bio; who are you? -->
-  <div class="profile-bio">
+                    <!-- bit of a bio; who are you? -->
+                    <div class="profile-bio">
 
-    <p><?php echo $senior_class; ?></p>
-		
-			<p>פרוייקטים שלקחתי בהם חלק :<?php echo $senior_projects; ?></p>
-			<p>תוכלו לראות את הפרוייקטים שלי בעמוד הפרויקטים באתר.</p>
-		</div></p>
-
-  </div>
+                      <p><?php echo $senior_class; ?></p>
+                      
+                        <p>פרוייקטים שלקחתי בהם חלק :<?php echo $senior_projects; ?></p>
+                        <p>תוכלו לראות את הפרוייקטים שלי בעמוד הפרויקטים באתר.</p>
+                    </div>
+           
 
   <!-- some social links to show off -->
   <ul class="profile-social-links">
@@ -426,22 +448,23 @@ aside:hover ul li:nth-child(3) {
     <!-- add or remove social profiles as you see fit -->
 
   </ul>
-
 </aside>
-
 </div>
-								
-					</div>
-					</div><!-- .entry-content -->
- 
+                
+         <!--  </div> -->
+          <!-- end row in loop -->
+
+ <!--  </div> --> 
+  <!-- end container in loop -->
+  </div>
+      
+
 			<?php
  
 			// End the loop.
 			endwhile;
  
 			?>
- 
-			</div>
  
 			<?php
  
@@ -451,8 +474,10 @@ aside:hover ul li:nth-child(3) {
  
 		endif;
 		?>
- 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
- <?php require 'template-page/contact-us-section8.php'; ?>
+      </div>
+      </div>
+      </div>
+   </div> <!-- end all seniores div  -->
+   
+ <?php require 'contact-us-bogrim.php'; ?>
 <?php get_footer(); ?>

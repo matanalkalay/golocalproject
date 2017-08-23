@@ -73,7 +73,7 @@ body {
 	text-align: center;
 	color: #081f39;
 	margin:12px 0 12px 20px;
-    text-decoration:none;
+    text-decoration:none!important;
 }
 .header a:hover {
 	border-bottom: 2px solid #42BCB0;

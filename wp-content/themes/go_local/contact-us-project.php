@@ -20,10 +20,11 @@ Template Name: contact us section 8
 	}
 	.section8 .wpcf7-submit {
 	width: 16%;
-    color: #00BFB6;
+    color: #ED9C28;
     background: white;
     box-shadow: 0px 0px 10px #242121;
     border-radius: 20px;
+    font-size: 150%;
 	}
 </style>
 <body>
