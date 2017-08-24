@@ -123,7 +123,9 @@ function project_custom_init() {
           'rewrite' => array( 'slug' => 'פרוייקט' ),
           'capability_type' => 'post',
           'has_archive' => true, 
+          'label'=> 'project',
           'hierarchical' => false,
+          'show_in_rest' => true,
           'taxonomies' => array('category'),
           'menu_position' => null,
           'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
@@ -282,6 +284,8 @@ function senior_custom_init() {
           'rewrite' => array( 'slug' => 'בוגר' ),
           'capability_type' => 'post',
           'has_archive' => true, 
+          'show_in_rest' => true,
+           'label'=> 'senior',
           'hierarchical' => false,
           'taxonomies' => array('category'),
           'menu_position' => null,

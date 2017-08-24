@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wordpress Angular App</title>
+	
+</head>
+<body>
+	<div class="container" ng-controller="myCtrl">
+		<ul>
+			<li ng-repeat="post in project">
+				<h3>{{project.title.rendered}}</h3>
+				<p>{{project.content.rendered}}</p>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
