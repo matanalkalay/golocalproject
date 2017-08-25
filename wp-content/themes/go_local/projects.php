@@ -1,12 +1,26 @@
 <?php 
+
 /* Template Name: תבנית פרוייקטים */ 
  
 get_header(); ?>
 
-<link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
- <style type="text/css">
-
-.allProjets{
+<head>
+<script type="text/javascript" src="<?php echo site_url('/wp-content/themes/go_local/lib/angular/angular.js' ); ?>"></script>
+<script type="text/javascript" src="<?php echo site_url('/wp-content/themes/go_local/lib/angular/angular-route.js' ); ?>"></script>
+  <!-- AngularJS Animations File -->
+  <script src="<?php echo site_url('wp-content/themes/go_local/lib/angular/angular-animate.js' ); ?>"></script>
+  <!-- AngularJS Bootstrap JS File -->
+  <script type="text/javascript" src="<?php echo site_url('wp-content/themes/go_local/lib/bootstrap/ui-bootstrap-tpls-2.5.0.js' ); ?>"></script>
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" type="text/css" href="<?php echo site_url('wp-content/themes/go_local/lib/bootstrap/bootstrap.css' ); ?>">
+  <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <!-- Our app.js File -->
+  <script type="text/javascript" src="<?php echo site_url('wp-content/themes/go_local/js/app.js' ); ?>">
+    </script>
+<link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'> 
+</head>
+<style type="text/css">
+  .allProjets{
 padding-top: 25%;
 }
 .project-area{
@@ -19,15 +33,6 @@ padding-top: 25%;
  text-shadow: 2px 2px 5px #9E9E9E;
 }
 
-body{
-  text-align:right;
-}
-li{
-  list-style: none;
-}
-/**
-* VARIABLES
-**/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 * {
   box-sizing: border-box;
@@ -36,7 +41,7 @@ li{
 body {
   font-family: "Open Sans";
   font-size: 16px;
-  background-color: #eee;
+
 }
 
 /**
@@ -213,77 +218,22 @@ padding-top: 50%;
 
 }
 
- </style>
-    <?php 
+
+</style>
+<body>
+<?php
     require 'section3.php';
+
         $args = array(
         'post_type' => array( 'project' )
       );
       query_posts( $args );
-    ?>
- 
-    <?php if ( have_posts() ) : ?>
-      <div class="project-area">
-   <div class="head-title">
-      <h2>הפרויקטים שלנו</h2>
-      </div> 
-    <div class="allProjets">  
- 
-      <?php 
-      // Start the loop.
-      while ( have_posts() ) : the_post(); ?>
-      <article class="card">
- 
-  
-                 <?php
-                $project_img = get_field('project_img');
-                $project_name = get_field('project_name');
-                $client_name = get_field('client_name');
-                $website_type = get_field('website_type');
-                $developers_name = get_field('developers_name');
-                $project_description = get_field('project_description');
-                $kisor_web = get_field('kisor_web');
-                ?>  
-  <div class="card__thumb">
-    <a href="#"> <img src="<?php echo $project_img['url']; ?>" alt="<?php echo $project_img['alt']; ?>" /></a>
-  </div >
+require 'projects.html';
 
-  <div class="card__body">
-    <div class="card__category"><a href="#"><?php echo $website_type ?></a></div>
-    <h2 class="card__title"><a href="#">שם האתר: <?php echo $project_name ?></a></h2>
-    <div class="card__subtitle"><?php echo  $project_description ?></div>
-    <p class="card__description">
-      <p>שם הלקוח: <?php echo $client_name ?></p>
-      <p>סוג האתר: <?php echo $website_type ?></p>
-      <p>שמות המפתחים: <?php echo $developers_name ?></p>
-    </p>
-    <a href="<?php echo $kisor_web ?>" class="myButton">קישור לפרויקט</a>
-  </div>
-  </article>
-               
-  
-
-      <?php
- 
-      // End the loop.
-      endwhile;
- 
-      ?>
-      </div>
-</div>
- 
- 
-
-    
- 
-      <?php
- 
-    // If no content, include the "No posts found" template.
-    else :
-      get_template_part( 'content', 'none' );
- 
-    endif;
-    ?>
-</div>
+?>
 <?php require 'contact-us-project.php'; ?>
-<?php get_footer(); ?>
+
+  <?php
+  get_footer(); ?>
+</body>
+</html>

@@ -1,0 +1,42 @@
+     
+<div class="project-area" ng-app="myApp">
+   <div class="head-title">
+      <h2>הפרויקטים שלנו</h2>
+      </div> 
+   <div  ng-controller="myCtrl">
+   <div class="container">
+	<input type="text" placeholder="חיפוש" ng-model="query"/>
+ <P>בחר את סוג האתר שברצונך למצוא</P>
+ <select name="Query_typeOfTheWebSite" ng-model="Query_typeOfTheWebSite"/>
+    
+    <option value="תדמית">אתר תדמית</option>
+    <option value="חברתית">רשת חברתית</option>
+    <option value="עיסקי">אתר עיסקי</option>
+    <option value=" ">הכל</option>
+  </select>
+  </div>
+	<div class="allProjets" ng-controller="myCtrl" > 
+	
+		<ul>
+		<li ng-repeat="post in project | filter:query | filter:Query_typeOfTheWebSite">  
+		<article class="card"> 
+  <div class="card__thumb">
+    <a href="#"> <img ng-src="{{post.acf.project_img.url}}" alt="" /></a>
+  </div >
+
+  <div class="card__body">
+    <div class="card__category"><a href="#">{{post.acf.website_type}}</a></div>
+    <h2 class="card__title"><a href="#">שם האתר: {{post.acf.project_name}} </a></h2>
+    <div class="card__subtitle">{{post.acf.project_description}}</div>
+    <p class="card__description">
+      <p>שם הלקוח: {{post.acf.client_name}}</p>
+      <p>סוג האתר:{{post.acf.website_type}}</p>
+      <p>שמות המפתחים: {{post.acf.developers_name}}</p>
+    </p>
+    <a href= {{post.acf.kisor_web}} class="myButton">קישור לפרויקט</a>
+  </div> 
+  </article>
+			</li>
+		</ul>
+	</div>
+</div>

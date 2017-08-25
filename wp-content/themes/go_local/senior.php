@@ -479,7 +479,7 @@ aside:hover ul li:nth-child(3) {
       </div>
       </div>
       </div>
-   </div> <!-- end all seniores div  -->
+   </div> 
    
  <?php require 'contact-us-bogrim.php'; ?>
 <?php get_footer(); ?>
