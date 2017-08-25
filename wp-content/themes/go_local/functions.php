@@ -299,11 +299,21 @@ function my_scripts() {
 	
 	wp_enqueue_script(
 		'angularjs',
-		get_stylesheet_directory_uri() . '/angular/angular.min.js'
+		get_stylesheet_directory_uri() . 'lib/angular/angular.min.js'
 	);
 	wp_enqueue_script(
 		'angularjs-route',
-		get_stylesheet_directory_uri() . 'angular/angular-route.min.js'
+		get_stylesheet_directory_uri() . 'lib/angular/angular-route.min.js'
 	);
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
+
+
+function wp_api_encode_acf($data,$post,$context){
+	$data['meta'] = array_merge($data['meta'],get_fields($post['ID']));
+	return $data;
+}
+
+if( function_exists('get_fields') ){
+	add_filter('json_prepare_post', 'wp_api_encode_acf', 10, 3);
+}
