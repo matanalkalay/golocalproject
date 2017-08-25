@@ -4,6 +4,10 @@ Template Name: video section 4
 */
 ?>
 <style type="text/css">
+.section4 {
+	background-color: #42BCB0;
+    padding: 5%;
+}
 	.wp-playlist-light {
 	    background: #42bcb0!important;
 	    color: #000!important;

@@ -5,11 +5,10 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
+
   #section4 {
-     /* background-image: url("background-image: url(<?php echo site_url() . '/wp-content/uploads/2017/08/Freepika.jpg';?>")*/
-         background-color: #F5A649;
-      
-      
+      background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/startup-593327_1920-min.jpg';?>"); 
+      color: white; 
     }
     .section-heading {
       margin-bottom: 4%;
@@ -56,6 +55,10 @@
       margin-bottom: 8%;
       margin-top: 3%;
       margin-right: 6%;
+      font-size: 178%;
+      width: 60%;
+      color: white;
+      text-shadow: 2px 2px 12px #000000;
     }
     #section4 .sevice-col-wrapper {
     margin-bottom: 0%!important;

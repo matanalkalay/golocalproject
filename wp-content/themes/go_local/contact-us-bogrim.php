@@ -7,11 +7,11 @@ Template Name: contact us section 8
 	.section8 {
 		background-color: #F7A74A;
 		height: 400px;
-		margin-top: 2%;
 	}
 	form {
 		text-align: center;
-		color: white; 
+		color: white;
+		margin-top: 3%; 
 	}
 	form input {
 	border: 1px solid white;

@@ -7,7 +7,9 @@ get_header(); ?>
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 .allSeniors {
-  margin-bottom: 10%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    background-color: lightgray;
 }
 .top-area-profile img {
   border-radius: 50%;

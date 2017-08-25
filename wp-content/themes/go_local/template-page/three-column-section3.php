@@ -4,6 +4,12 @@ Template Name: three column section 3
 */
 ?>
 <style type="text/css">
+	.section3 {
+		padding-top: 5%;
+	}
+	#section3 {
+	    padding-bottom: 5%;
+}
 	.section-heading {
 		display: inline-block;
 	    border-bottom: 3px solid #22B59A;
@@ -72,7 +78,7 @@ Template Name: three column section 3
 	}
 </style>
 <body>
-<section id="section3" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" class="plrx_enable">
+<section class="section3" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" class="plrx_enable">
 <section id="section3"> 
 
     <div class="container">

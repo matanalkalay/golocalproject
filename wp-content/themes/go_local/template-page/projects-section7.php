@@ -9,8 +9,9 @@ Template Name: projects section 7
   position: relative;
     top: 70px;
 }
-.allProjets{
-margin-top: 28%;
+.allProjets {
+    margin-top: 28%;
+    margin-bottom: -17%;
 }
  h2{
 text-align: center;
@@ -32,20 +33,24 @@ li{
 * CARD
 **/
 .section7 {
-  background-color: #15C0AB;
+  background-color: #00BFB6;
   margin-top: -2%;
 }
-.card{
-  margin-left: 5%;
-  width: 300px;
-   display: inline-block;
-  -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
-   transform: translateX(-50%) translateY(-50%) translateZ(0);
-  background-color:white;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  -webkit-transition: box-shadow 0.5s;
-  transition: box-shadow 0.5s;
+.card {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 300px;
+    height: 500px;
+    border: 1px solid #06BFB6;
+    border-radius: 25px;
+    display: inline-block;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
+    transform: translateX(-50%) translateY(-50%) translateZ(0);
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
 }
 .card a {
   color: inherit;

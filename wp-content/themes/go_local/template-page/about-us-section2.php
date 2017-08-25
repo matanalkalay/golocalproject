@@ -6,13 +6,7 @@ Template Name: about us section 2
 <style type="text/css">
 	.section2 {
 		background-color: #42BCB0;
-	}
-	.section2 img {
-    	height: 290px;
-	    border: 1px solid #42BCB0;
-	    border-radius: 30px;
-	    margin-top: 10%;
-	    margin-bottom: 10%;
+		padding-bottom: 5%;
 	}
 	.title-text {
 		color: white;
@@ -48,10 +42,7 @@ Template Name: about us section 2
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<img src="<?php echo site_url() . '/wp-content/uploads/2017/08/startup-593327_1920-min.jpg'; ?>">
-				</div>
-				<div class="col-lg-8 col-md-6">
+				<div class="col-lg-12 col-md-12">
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="box-text">
