@@ -1,6 +1,22 @@
 <?php 
 /* Template Name: תבנית בוגרים */ 
 get_header(); ?>
+
+<head>
+<script type="text/javascript" src="<?php echo site_url('/wp-content/themes/go_local/lib/angular/angular.js' ); ?>"></script>
+<script type="text/javascript" src="<?php echo site_url('/wp-content/themes/go_local/lib/angular/angular-route.js' ); ?>"></script>
+  <!-- AngularJS Animations File -->
+  <script src="<?php echo site_url('wp-content/themes/go_local/lib/angular/angular-animate.js' ); ?>"></script>
+  <!-- AngularJS Bootstrap JS File -->
+  <script type="text/javascript" src="<?php echo site_url('wp-content/themes/go_local/lib/bootstrap/ui-bootstrap-tpls-2.5.0.js' ); ?>"></script>
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" type="text/css" href="<?php echo site_url('wp-content/themes/go_local/lib/bootstrap/bootstrap.css' ); ?>">
+  <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <!-- Our app.js File -->
+  <script type="text/javascript" src="<?php echo site_url('wp-content/themes/go_local/js/seniorapp.js' ); ?>">
+    </script>
+<link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'> 
+</head>
 <style type="text/css">
 	/* go on then, styles go here.. knock yourself out! */
 
@@ -364,122 +380,17 @@ aside:hover ul li:nth-child(3) {
   }
 }
 </style>
+<body>
 		<?php 
 		require 'section4.php';
 		    $args = array(
 				'post_type' => array( 'senior' )
 			);
 			query_posts( $args );
+
+      require 'senior.html';
 		?>
- 
-		<?php if ( have_posts() ) : ?>
-     
-      <div class="allSeniors">
-         <h2>הבוגרים שלנו</h2>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">  
- 
-      <?php 
-      // Start the loop.
-      while ( have_posts() ) : the_post(); ?>
- <div class="col-lg-4 senior_profile">
-         <!-- <div class="container">
-    <div class="row"> -->
-          
-                <?php
- 
-                $senior_image = get_field('senior_img');
-                $senior_name = get_field('senior_name');
-                $senior_class = get_field('senior_class');
-                $senior_city = get_field('senior_city');
-                $senior_projects=get_field('senior_projects');
-                
- 
-                ?>
-            <div class="singleSenior">
-                <aside class="profile-card">
-
-                    <div class="top-area-profile">
-
-                        <!-- here’s the avatar -->
-                        <img class="senior_img" src="<?php echo $senior_image['url']; ?>" alt="<?php echo $senior_image['alt']; ?>" />
-
-                          <!-- the username -->
-                          <h2><?php echo  $senior_name ;?></h2>
-                      <br>
-                        
-                          <h2>- Full Stack Web Developer -</h2>
-
-                    </div>
-
-                    <!-- bit of a bio; who are you? -->
-                    <div class="profile-bio">
-
-                      <p><?php echo $senior_class; ?></p>
-                      
-                        <p>פרוייקטים שלקחתי בהם חלק :<?php echo $senior_projects; ?></p>
-                        <p>תוכלו לראות את הפרוייקטים שלי בעמוד הפרויקטים באתר.</p>
-                    </div>
-           
-
-  <!-- some social links to show off -->
-  <ul class="profile-social-links">
-
-    <!-- twitter - el clásico  -->
-    <li>
-      <a href="https://twitter.com/tutsplus">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-twitter.svg">
-      </a>
-    </li>
-
-    <!-- envato – use this one to link to your marketplace profile -->
-    <li>
-      <a href="https://envato.com">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-envato.svg">
-      </a>
-    </li>
-
-    <!-- codepen - your codepen profile-->
-    <li>
-      <a href="https://codepen.io/tutsplus">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-codepen.svg">
-      </a>
-    </li>
-
-    <!-- add or remove social profiles as you see fit -->
-
-  </ul>
-</aside>
-</div>
-                
-         <!--  </div> -->
-          <!-- end row in loop -->
-
- <!--  </div> --> 
-  <!-- end container in loop -->
-  </div>
-      
-
-			<?php
- 
-			// End the loop.
-			endwhile;
- 
-			?>
- 
-			<?php
- 
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'content', 'none' );
- 
-		endif;
-		?>
-      </div>
-      </div>
-      </div>
-   </div> 
-   
  <?php require 'contact-us-bogrim.php'; ?>
 <?php get_footer(); ?>
+</body>
+</html>

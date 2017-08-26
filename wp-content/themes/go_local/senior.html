@@ -1,0 +1,70 @@
+
+     
+      <div class="allSeniors"  ng-app="myApp">
+         <h2>הבוגרים שלנו</h2>
+        <div class="container" ng-controller="myCtrl">
+          <div class="row">
+          חפש בוגר
+          <input type="text" placeholder="חיפוש" ng-model="query"/>
+
+            <div class="col-lg-12">  
+            <div class="allProjets" ng-controller="myCtrl" > 
+  
+    <ul>
+    <li ng-repeat="post in senior | filter:query ">  
+ <div class="col-lg-4 senior_profile">
+            <div class="singleSenior">
+                <aside class="profile-card">
+                    <div class="top-area-profile">
+                        <!-- here’s the avatar -->
+                        <img class="senior_img"  ng-src="{{post.acf.senior_img.url}}"  />
+
+                          <!-- the username -->
+                          <h2>{{post.acf.senior_name}}</h2>
+                    
+                        
+                          <h2>- Full Stack Web Developer -</h2>
+
+                    </div>
+
+                    <!-- bit of a bio; who are you? -->
+                    <div class="profile-bio">
+                     <p>{{post.acf.senior_city}}</p>
+                      <p>{{post.acf.senior_class}}</p>
+                      
+                        <p>פרוייקטים שלקחתי בהם חלק :{{post.acf.senior_projets}}</p>
+                        <p>תוכלו לראות את הפרוייקטים שלי בעמוד הפרויקטים באתר.</p>
+                    </div>
+           
+
+  <!-- some social links to show off -->
+  <ul class="profile-social-links">
+
+    <!-- twitter - el clásico  -->
+    <li>
+      <a ng-href="{{post.acf.facebook_address}}">
+        <img src="http://www.bluedot360.co.il/wp-content/uploads/2015/09/website-icons_Social-Media_01.png">
+      </a>
+    </li>
+
+    <!-- envato – use this one to link to your marketplace profile -->
+    
+
+   
+
+  </ul>
+</aside>
+</div>
+                
+         <!--  </div> -->
+          <!-- end row in loop -->
+
+ <!--  </div> --> 
+  <!-- end container in loop -->
+  </div>
+      
+      </div>
+      </div>
+      </div>
+   </div> 
+   
