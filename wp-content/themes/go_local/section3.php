@@ -9,14 +9,14 @@
 			/*background-color: #ED9C28;*/
 			
 			color: white;
-			padding-bottom: 3.4%;
+			padding-bottom: 0%;
 			
 		}
 		#section3 img {
 			position: absolute;
 			opacity: 0.76;
 			width: 100%;
-   			 height: 78%;
+   			 height: 83%;
 		}
 		.plrx_enable {
 		background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/coffee-1276781_1920.jpg';?>");
