@@ -85,8 +85,33 @@
     .service-subheading {
     	color: white;
     }
+/*@media (min-width: 412px) {
+	#section3 {
+		height: 1300px;
+	}
+	#section3 img {
+		height: 74.5%;
+	}
+	.sevice-col-wrapper {
+	    margin-bottom: 5%;
+	    font-size: x-large;
+	}
+	.service-heading {
+		font-size: x-large;
+    	
+    }
+    .circle1 i {
+	    font-size: 85px;
+	}
+	.circle2 i {
+	    font-size: 85px;
+	}
+	.circle3 i {
+	    font-size: 85px;
+	}*/
     </style>
     </head>
+
 <body>
 <section id="section3" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" class="plrx_enable">
 <section id="section3"> 

@@ -25,7 +25,6 @@ get_header(); ?>
 .allSeniors {
     /*padding-bottom: 10%;*/
     padding-top: 5%;
-    opacity: 0.84;
     /*background-color: lightgray;*/ 
     background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/office-1734485_1920-min.jpg';?>"); 
       /* Set a specific height */
