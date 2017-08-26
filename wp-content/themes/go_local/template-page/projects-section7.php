@@ -10,7 +10,7 @@ Template Name: projects section 7
     top: 70px;
 }
 .allProjets {
-    margin-top: 28%;
+    margin-top: 37%;
     margin-bottom: -17%;
 }
  h2{
@@ -33,15 +33,16 @@ li{
 * CARD
 **/
 .section7 {
-  background-color: #00BFB6;
+  background-color: #00BFB6; 
   margin-top: -2%;
+
 }
 .card {
     margin-left: 5%;
     margin-bottom: 5%;
     width: 300px;
     height: 500px;
-    border: 1px solid #06BFB6;
+    border: 1px solid #00BFB6;
     border-radius: 25px;
     display: inline-block;
     -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);

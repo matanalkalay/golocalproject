@@ -9,6 +9,14 @@ Template Name: welcome section 1
 	background-repeat: round;
     height: 500px;
     position: relative;
+    /* Set a specific height */
+	      min-height: 500px; 
+
+	      /* Create the parallax scrolling effect */
+	      background-attachment: fixed;
+	      background-position: center;
+	      background-repeat: no-repeat;
+	      background-size: cover;
 	}
 	.addline-text {
 		color: white;

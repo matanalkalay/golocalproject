@@ -6,8 +6,28 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		#section3 {
-			background-color: #ED9C28;
+			/*background-color: #ED9C28;*/
+			
 			color: white;
+			padding-bottom: 0%;
+			
+		}
+		#section3 img {
+			position: absolute;
+			opacity: 0.76;
+			width: 100%;
+   			 height: 83%;
+		}
+		.plrx_enable {
+		background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/coffee-1276781_1920.jpg';?>");
+		/* Set a specific height */
+	      min-height: 500px; 
+
+	      /* Create the parallax scrolling effect */
+	      background-attachment: fixed;
+	      background-position: center;
+	      background-repeat: no-repeat;
+	      background-size: cover;
 		}
 		.section-heading {
 		display: inline-block;
@@ -70,6 +90,7 @@
 <body>
 <section id="section3" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" class="plrx_enable">
 <section id="section3"> 
+<img src="<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_p3.png';?>">
 
     <div class="container">
         <div class="row">
