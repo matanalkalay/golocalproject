@@ -10,6 +10,7 @@
 <body <?php body_class('mybodyclass'); ?>>
 
 <header>
+<nav>
 <div class="container">
 	<div class="row">
 		<!-- header -->
@@ -40,6 +41,7 @@
 	<!-- end  header-->
 </div>
 </div>	
+</nav>
 </header>
 
 	

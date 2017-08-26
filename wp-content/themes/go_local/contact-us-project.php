@@ -10,7 +10,8 @@ Template Name: contact us section 8
 	}
 	form {
 		text-align: center;
-		color: white; 
+		color: white;
+		margin-top: 3%; 
 	}
 	form input {
 	border: 1px solid white;
