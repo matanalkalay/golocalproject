@@ -18,11 +18,56 @@ get_header(); ?>
   <script type="text/javascript" src="<?php echo site_url('wp-content/themes/go_local/js/app.js' ); ?>">
     </script>
 <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'> 
+
 </head>
 <style type="text/css">
   .allProjets{
-padding-top: 25%;
+padding-top: 30%;
 }
+.search-projects {
+  text-align: center;
+  margin-top:5%;
+}
+.search-projects input {
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: center;
+}
+
+ .search-projects input:focus {
+    width: 30%;
+}  
+.search-projects select {
+    width: 230px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: center;
+}
+.search-projects select option {
+  text-align: center;
+}
+.search-projects select:focus {
+    width: 30%;
+}  
+
+
 .project-area{
   background-color: #06BFB6;
   padding-top: 1%;

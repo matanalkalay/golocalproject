@@ -28,10 +28,7 @@ Template Name: three column section 3
 		margin-bottom: 10%;
 		width: 100px;
 	    height: 100px;
-	    background: #56ab2f;  /* fallback for old browsers */
-		background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	    border: 1px solid #a8e063;
+	    background: linear-gradient(138.51deg, #00862C 0%, #7DCA47 100%);
 	    border-radius: 50%;
 	    display: inline-block;
 	}
@@ -44,10 +41,7 @@ Template Name: three column section 3
 		margin-bottom: 10%;
 		width: 100px;
 	    height: 100px;
-	    background: #34e89e;  /* fallback for old browsers */
-		background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	    border: 1px solid #34e89e;
+	    background: linear-gradient(321.73deg, #5ACCB9 0%, #009788 100%);
 	    border-radius: 50%;
 	    display: inline-block;
 	}

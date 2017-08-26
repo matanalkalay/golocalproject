@@ -23,10 +23,43 @@ get_header(); ?>
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 .allSeniors {
-    padding-bottom: 10%;
+    /*padding-bottom: 10%;*/
     padding-top: 5%;
-    background-color: lightgray;
+    opacity: 0.84;
+    /*background-color: lightgray;*/ 
+    background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/office-1734485_1920-min.jpg';?>"); 
+      /* Set a specific height */
+      min-height: 500px; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 }
+.search-senior {
+  text-align: center;
+}
+.search-senior input {
+  width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+ .search-senior input:focus {
+    width: 30%;
+}  
+
 .top-area-profile img {
   border-radius: 50%;
   margin: 28px auto;
@@ -120,7 +153,7 @@ aside:hover .profile-bio {
 .profile-social-links {
   position: relative;
     margin-top: -120%;
-    margin-right: 75%;
+    margin-right: 60%;
   list-style-type: none;
   opacity: 0;
   transition: all ease 0.5s;
