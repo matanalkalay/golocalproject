@@ -97,8 +97,8 @@ function welcome_custom_init() {
       $labels = array(
           'name' => 'ברוכים הבאים',
           'singular_name' => 'ברוכים',
-          'add_new' => 'הוסף שורה חדשה',
-          'add_new_item' => 'הוסף פרוייקט חדש',
+          'add_new' => 'הוסף שורות פתיחה',
+          'add_new_item' => 'הוסף שורות פתיחה',
           'edit_item' => 'ערוך שורות',
           'new_item' => 'שורה חדש',
           'all_items' => 'כל השורות',
