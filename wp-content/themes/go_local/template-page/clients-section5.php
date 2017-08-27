@@ -56,66 +56,66 @@ Template Name: clients section 5
     text-shadow: 2px 2px 5px #9E9E9E;
 }
   </style>
-  <script type="text/javascript">
-  	
-  </script>
+  <?php 
+ $args = array(
+        'post_type' => array( 'clients' )
+      );
+      query_posts( $args );
+ ?>
+<?php while ( have_posts() ) : the_post(); ?>
   <div class="testimonials" id="testimonials">
 		<div class="container" >
-			<h1>לקוחות מספרים</h1>
+			<h1><?php the_field('title_section'); ?></h1>
 		    <ul class="bxslider">
 		 		<li> 
 	  				<div class="item">
 	                	<i class="fa fa-quote-right fa-4x" aria-hidden="true"></i>
-	                    <p>אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
-								ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p>
-	                    <h5>לורם איפסום</h5>
-	                    <span>לורם איפסום</span>
+	                    <p><?php the_field('first_client_job'); ?></p>
+	                    <h5><?php the_field('first_client_name'); ?></h5>
+	                    <span><?php the_field('first_client_text'); ?></span>
 	                </div>
 			  	</li>
 			  	<li>
   					<div class="item">
 	                	<i class="fa fa-quote-right fa-4x" aria-hidden="true"></i>
-	                    <p>אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
-								ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p>
-	                    <h5>לורם איפסום </h5>
-	                    <span>לורם איפסום</span>
+	                    <p><?php the_field('secend_client_job'); ?></p>
+	                    <h5><?php the_field('secend_client_job'); ?></h5>
+	                    <span><?php the_field('secend_client_job'); ?></span>
 	                </div>
 				</li>
 				<li>
   					<div class="item">
 	                	<i class="fa fa-quote-right fa-4x" aria-hidden="true"></i>
-	                    <p>אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
-								ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p>
-	                    <h5>לורם איפסום</h5>
-	                    <span>לורם איפסום </span>
+	                    <p><?php the_field('third_client_job'); ?></p>
+	                    <h5><?php the_field('third_client_job'); ?></h5>
+	                    <span><?php the_field('third_client_job'); ?></span>
 	                </div>
 			    </li>
 			    <li>
   					<div class="item">
 	                	<i class="fa fa-quote-right fa-4x" aria-hidden="true"></i>
-	                    <p>אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
-								ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p>
-	                    <h5>לורם איפסום</h5>
-	                    <span>לורם איפסום</span>
+	                    <p><?php the_field('forth_client_job'); ?></p>
+	                    <h5><?php the_field('forth_client_job'); ?></h5>
+	                    <span><?php the_field('forth_client_job'); ?></span>
                 	</div>
 				</li>
 				<li>
   					<div class="item">
 	                	<i class="fa fa-quote-right fa-4x" aria-hidden="true"></i>
-	                    <p>אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
-								ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p>
-	                    <h5>לורם איפסום</h5>
-	                    <span>לורם איפסום</span>
+	                    <p><?php the_field('fifth_client_job'); ?></p>
+	                    <h5><?php the_field('fifth_client_job'); ?></h5>
+	                    <span><?php the_field('fifth_client_job'); ?></span>
 	                </div>
   				</li>
 			</ul>
 			<div id="bx-pager">
-  				<a data-slide-index="0" href=""><img src="<?php echo site_url() . '/wp-content/uploads/2017/08/qdi-generic-testimonial-person.png';?>" alt="" /></a>
-			    <a data-slide-index="1" href=""><img src="<?php echo site_url() . '/wp-content/uploads/2017/08/qdi-generic-testimonial-person.png';?>" alt="" /></a>
-			    <a data-slide-index="2" href=""><img src="<?php echo site_url() . '/wp-content/uploads/2017/08/qdi-generic-testimonial-person.png';?>" alt="" /></a>
-			    <a data-slide-index="3" href=""><img src="<?php echo site_url() . '/wp-content/uploads/2017/08/qdi-generic-testimonial-person.png';?>" alt="" /></a>
-			    <a data-slide-index="4" href=""><img src="<?php echo site_url() . '/wp-content/uploads/2017/08/qdi-generic-testimonial-person.png';?>" alt="" /></a>
+  				<a data-slide-index="0" href=""><img src="<?php the_field('first_client_pic'); ?>" alt="" /></a>
+			    <a data-slide-index="1" href=""><img src="<?php the_field('secend_client_pic'); ?>" alt="" /></a>
+			    <a data-slide-index="2" href=""><img src="<?php the_field('third_client_pic'); ?>" alt="" /></a>
+			    <a data-slide-index="3" href=""><img src="<?php the_field('forth_client_pic'); ?>" alt="" /></a>
+			    <a data-slide-index="4" href=""><img src="<?php the_field('fifth_client_pic'); ?>" alt="" /></a>
 			</div>
 
 		</div> 
 </div> 
+<?php endwhile; // end of the loop. ?>

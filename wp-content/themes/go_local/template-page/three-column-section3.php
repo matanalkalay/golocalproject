@@ -85,8 +85,8 @@ Template Name: three column section 3
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">על הפרויקט</h2>
-                <h3 class="section-subheading text-muted">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי. </h3>
+                <h2 class="section-heading"><?php the_field('title_abouttheproject'); ?></h2>
+                <h3 class="section-subheading text-muted"><?php the_field('sec_line_abouthteproject'); ?></h3>
             </div>
         </div>
         <div class="row text-center servies wow fadeInRight" data-wow-duration="1s">
@@ -95,8 +95,8 @@ Template Name: three column section 3
                <div class="circle1">
               	 	<i class="fa fa-phone" aria-hidden="true"></i>
                </div>
-                <h4 class="service-heading">מיקור חוץ</h4>
-                <p class="text-muted">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד  </p>
+                <h4 class="service-heading"><?php the_field('title1_collouns_ap'); ?></h4>
+                <p class="text-muted"><?php the_field('text1_couloun_ap'); ?></p>
             </div>
             </div>
             <div class="col-md-4 sevice2">
@@ -104,8 +104,8 @@ Template Name: three column section 3
                 <div class="circle2">
 				<i class="fa fa-user-circle" aria-hidden="true"></i>               
 				</div>
-                <h4 class="service-heading">מערכות מורכבות</h4>
-                <p class="text-muted">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד </p>
+                <h4 class="service-heading"><?php the_field('title2_collouns_ap'); ?></h4>
+                <p class="text-muted"><?php the_field('title2_collouns_ap'); ?></p>
             </div>
             </div>
             <div class="col-md-4 sevice3">
@@ -113,8 +113,8 @@ Template Name: three column section 3
                <div class="circle3">
               	 	<i class="fa fa-commenting-o" aria-hidden="true"></i>
                </div>
-                <h4 class="service-heading">אתרי תדמית ותוכן</h4>
-                <p class="text-muted">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד 
+                <h4 class="service-heading"><?php the_field('title3_collouns_ap'); ?></h4>
+                <p class="text-muted"><?php the_field('title3_collouns_ap'); ?> 
             </div>
         </div>
     </div>
