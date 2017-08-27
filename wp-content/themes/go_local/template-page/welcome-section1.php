@@ -40,21 +40,29 @@ Template Name: welcome section 1
 </style>
 
 <body>
+<?php 
+ $args = array(
+        'post_type' => array( 'welcome' )
+      );
+      query_posts( $args );
+ ?>
+<?php while ( have_posts() ) : the_post(); ?>
 		<div class="section1"  style="background-image: url(<?php echo site_url() . '/wp-content/uploads/2017/08/apple-1841281_1920-min.jpg';?>)">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="addline-text">
-						<h1><b>ברוכים הבאים ל GO LOCAL</b></h1><br>
-						<h1><b>פה ההזדמנות שלך</b></h1><br>
-						<h1><b>לפתח את ההיטק המקומי</b></h1><br>
+						<h1><b><?php the_field('first_line_welcome'); ?></b></h1><br>
+						<h1><b><?php the_field('secend_line_welcome'); ?></b></h1><br>
+						<h1><b><?php the_field('third_line_welcome'); ?></b></h1><br>
 						<div class="button-section1">
-						<button href="#" type="button" class="btn btn-warning btn-lg">קרא עוד</button>
+						<button href="#" type="button" class="btn btn-warning btn-lg"><?php the_field('button_welcome'); ?></button> 
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>	
 		</div>
+		<?php endwhile; // end of the loop. ?>
 </body>
 		
