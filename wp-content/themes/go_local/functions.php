@@ -93,7 +93,45 @@ function go_local_setup() {
 		'flex-height' => true,
 	) );
 }
-
+function welcome_custom_init() {
+      $labels = array(
+          'name' => 'ברוכים הבאים',
+          'singular_name' => 'ברוכים',
+          'add_new' => 'הוסף שורה חדשה',
+          'add_new_item' => 'הוסף פרוייקט חדש',
+          'edit_item' => 'ערוך שורות',
+          'new_item' => 'שורה חדש',
+          'all_items' => 'כל השורות',
+          'view_item' => 'הצג שורה',
+          'search_items' => 'חפש שורות',
+          'not_found' =>  'לא נמצא שורה',
+          'not_found_in_trash' => 'לא נמצא שורה ', 
+          'parent_item_colon' => '',
+          'menu_name' => 'ברוכים הבאים',
+          );
+ 
+      $args = array(
+          'labels' => $labels,
+          'exclude_from_search' => false,
+          'public' => true,
+          'publicly_queryable' => true,
+          'show_ui' => true, 
+          'show_in_menu' => true, 
+          'query_var' => true,
+          'rewrite' => array( 'slug' => 'ברוך' ),
+          'capability_type' => 'post',
+          'has_archive' => true, 
+          'label'=> 'wecome',
+          'hierarchical' => false,
+          'show_in_rest' => true,
+          'taxonomies' => array('category'),
+          'menu_position' => null,
+          'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
+          ); 
+ 
+        register_post_type( 'welcome', $args );
+    }
+add_action( 'init', 'welcome_custom_init');
 add_action( 'after_setup_theme', 'go_local_setup' );
 function project_custom_init() {
       $labels = array(

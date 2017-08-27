@@ -41,13 +41,19 @@ Template Name: about us section 2
 		position: absolute;
 		opacity: 0.76;
 		width: 100%;
-		height: 610px;
+		height: 613px;
 	}
 </style>
 <body>
+<<<<<<< HEAD
 	<div class="section2">
 		<img src="<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_copy.png';?>">
 		<div class="container" id="section2">
+=======
+	<div class="section2">				
+	<img src="<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_copy.png';?>">	
+		<div class="container">
+>>>>>>> 9c73e40525f40d0a17a79d7b8fa535e15ce890a3
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="title-text">
