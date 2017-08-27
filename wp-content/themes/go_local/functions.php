@@ -256,15 +256,15 @@ function beforecontactus_custom_init() {
       $labels = array(
           'name' => 'פס כתום',
           'singular_name' => 'פס כתום',
-          'add_new' => 'הוסף פס כתוםו חדש',
-          'add_new_item' => 'הוסף פס כתוםחדש',
+          'add_new' => 'הוסף פס כתום חדש',
+          'add_new_item' => 'הוסף פס כתום חדש',
           'edit_item' => 'ערוך פס כתום',
           'new_item' => 'על פס כתום חדש',
           'all_items' => 'כל פס כתום',
           'view_item' => 'הצג פס כתום',
           'search_items' => 'חפש פס כתום',
           'not_found' =>  'לא נמצא פס כתום',
-          'not_found_in_trash' => 'לא פס כתוםו', 
+          'not_found_in_trash' => 'לא פס כתום', 
           'parent_item_colon' => '',
           'menu_name' => 'פס כתום',
           );
