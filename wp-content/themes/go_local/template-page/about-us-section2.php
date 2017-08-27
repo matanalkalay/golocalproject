@@ -45,13 +45,20 @@ Template Name: about us section 2
 	}
 </style>
 <body>
+<?php 
+ $args = array(
+        'post_type' => array( 'aboutus' )
+      );
+      query_posts( $args );
+ ?>
+<?php while ( have_posts() ) : the_post(); ?>
 	<div class="section2">				
 	<img src="<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_copy.png';?>">	
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="title-text">
-						<h1 id="section2">אודות</h1>
+						<h1 id="section2"><?php the_field('title_abutus'); ?></h1>
 					</div>
 				</div>
 			</div>
@@ -60,18 +67,14 @@ Template Name: about us section 2
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="box-text">
-								<p><b>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קוואזי במר מודוף.</b><p> אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
-								ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p></p>
+								<p><b><?php the_field('bold_line'); ?></b><p> אודיפו <?php the_field('sec_aboutus'); ?></p></p>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="just-text">
-								<p>ורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
-								ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p>
-								<p>ורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
-								ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p>
+								<p><?php the_field('third_section_aboutus'); ?></p>
 
 							</div>
 						</div>
@@ -80,4 +83,5 @@ Template Name: about us section 2
 			</div>
 		</div>
 	</div>
+	<?php endwhile; // end of the loop. ?>
 </body>
