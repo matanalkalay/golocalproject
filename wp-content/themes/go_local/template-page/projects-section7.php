@@ -10,7 +10,7 @@ Template Name: projects section 7
     top: 70px;
 }
 .allProjets {
-    margin-top: 37%;
+    margin-top: 30%;
     margin-bottom: -17%;
 }
  h2{
