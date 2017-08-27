@@ -291,6 +291,45 @@ function beforecontactus_custom_init() {
         register_post_type( 'beforecontactus', $args );
     }
 add_action( 'init', 'beforecontactus_custom_init');
+function about_our_project_custom_init() {
+      $labels = array(
+          'name' => 'אודות התוכנית שלנו',
+          'singular_name' => 'אודות התוכנית שלנו',
+          'add_new' => 'הוסף אודות התוכנית שלנו חדש',
+          'add_new_item' => 'הוסף אודות התוכנית שלנו חדש',
+          'edit_item' => 'ערוך אודות התכונית שלנו',
+          'new_item' => 'אודות התוכנית שלנו חדש',
+          'all_items' => 'כל אודות התוכנית שלנו',
+          'view_item' => 'הצג אודות התוכנית שנלו',
+          'search_items' => 'חפש אודות התוכנית שלנו',
+          'not_found' =>  'לא נמצא אודות התוכנית שלנו',
+          'not_found_in_trash' => 'לא נמצא אודות התוכנית שלנו', 
+          'parent_item_colon' => '',
+          'menu_name' => 'אודות התוכנית שלנו',
+          );
+ 
+      $args = array(
+          'labels' => $labels,
+          'exclude_from_search' => false,
+          'public' => true,
+          'publicly_queryable' => true,
+          'show_ui' => true, 
+          'show_in_menu' => true, 
+          'query_var' => true,
+          'rewrite' => array( 'slug' => 'אודות התוכנית שלנו' ),
+          'capability_type' => 'post',
+          'has_archive' => true, 
+          'show_in_rest' => true,
+           'label'=> 'about_our_project',
+          'hierarchical' => false,
+          'taxonomies' => array('category'),
+          'menu_position' => null,
+          'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
+          ); 
+ 
+        register_post_type( 'about_our_project', $args );
+    }
+add_action( 'init', 'about_our_project_custom_init');
 function project_custom_init() {
       $labels = array(
           'name' => 'פרוייקטים',
