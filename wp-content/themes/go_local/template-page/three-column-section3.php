@@ -72,6 +72,13 @@ Template Name: three column section 3
 	}
 </style>
 <body>
+<?php 
+ $args = array(
+        'post_type' => array( 'abouttheproject' )
+      );
+      query_posts( $args );
+ ?>
+<?php while ( have_posts() ) : the_post(); ?>
 <section class="section3" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" class="plrx_enable">
 <section id="section3"> 
 
@@ -112,4 +119,5 @@ Template Name: three column section 3
         </div>
     </div>
 </section>
+<?php endwhile; // end of the loop. ?>
 </body>

@@ -35,16 +35,22 @@ Template Name: orange section 6
 
 </style>
 <body>
+<?php 
+ $args = array(
+        'post_type' => array( 'beforecontactus')
+      );
+      query_posts( $args );
+ ?>
+<?php while ( have_posts() ) : the_post(); ?>
 	<div class="section6">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 text-area">
-					לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
-				</div>
+				<div class="col-lg-6 text-area"><?php the_field('text_orange'); ?></div>
 				<div class="col-lg-6 button-area">
-					<button href="#" type="button" class="btn btn-lg">צור קשר!</button>
+					<button href="#" type="button" class="btn btn-lg"><?php the_field('button_orange'); ?></button>
 				</div>
 			</div>
 		</div>
 	</div>
+<?php endwhile; // end of the loop. ?>
 </body>
