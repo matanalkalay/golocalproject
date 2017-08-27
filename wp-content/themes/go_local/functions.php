@@ -93,6 +93,7 @@ function go_local_setup() {
 		'flex-height' => true,
 	) );
 }
+add_action( 'after_setup_theme', 'go_local_setup' );
 function welcome_custom_init() {
       $labels = array(
           'name' => 'ברוכים הבאים',
@@ -121,7 +122,7 @@ function welcome_custom_init() {
           'rewrite' => array( 'slug' => 'ברוך' ),
           'capability_type' => 'post',
           'has_archive' => true, 
-          'label'=> 'wecome',
+          'label'=> 'welcome',
           'hierarchical' => false,
           'show_in_rest' => true,
           'taxonomies' => array('category'),
@@ -132,7 +133,164 @@ function welcome_custom_init() {
         register_post_type( 'welcome', $args );
     }
 add_action( 'init', 'welcome_custom_init');
-add_action( 'after_setup_theme', 'go_local_setup' );
+
+
+function aboutus_custom_init() {
+      $labels = array(
+          'name' => 'אודות',
+          'singular_name' => 'אודות',
+          'add_new' => 'הוסף אודות חדש',
+          'add_new_item' => 'הוסף אודות חדש',
+          'edit_item' => 'ערוך אודות',
+          'new_item' => 'אודות חדש',
+          'all_items' => 'כל האודות',
+          'view_item' => 'הצג אודות',
+          'search_items' => 'חפש אודות',
+          'not_found' =>  'לא נמצא אודות',
+          'not_found_in_trash' => 'לא נמצא אודות', 
+          'parent_item_colon' => '',
+          'menu_name' => 'אודות',
+          );
+ 
+      $args = array(
+          'labels' => $labels,
+          'exclude_from_search' => false,
+          'public' => true,
+          'publicly_queryable' => true,
+          'show_ui' => true, 
+          'show_in_menu' => true, 
+          'query_var' => true,
+          'rewrite' => array( 'slug' => 'אודות' ),
+          'capability_type' => 'post',
+          'has_archive' => true, 
+          'label'=> 'aboutus',
+          'hierarchical' => false,
+          'show_in_rest' => true,
+          'taxonomies' => array('category'),
+          'menu_position' => null,
+          'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
+          ); 
+ 
+        register_post_type( 'aboutus', $args );
+    }
+add_action( 'init', 'aboutus_custom_init');
+function abouttheproject_custom_init() {
+      $labels = array(
+          'name' => 'על הפרויקט',
+          'singular_name' => 'על הפרויקט',
+          'add_new' => 'הוסף על הפרויקט חדש',
+          'add_new_item' => 'הוסף על הפרויקט חדש',
+          'edit_item' => 'ערוך על הפרויקט',
+          'new_item' => 'על הפרויקט חדש',
+          'all_items' => 'כל על הפרויקט',
+          'view_item' => 'הצג על הפרויקט',
+          'search_items' => 'חפש על הפרויקט',
+          'not_found' =>  'לא נמצא על הפרויקט',
+          'not_found_in_trash' => 'לא נמצא על הפרויקט', 
+          'parent_item_colon' => '',
+          'menu_name' => 'על הפרויקט',
+          );
+ 
+      $args = array(
+          'labels' => $labels,
+          'exclude_from_search' => false,
+          'public' => true,
+          'publicly_queryable' => true,
+          'show_ui' => true, 
+          'show_in_menu' => true, 
+          'query_var' => true,
+          'rewrite' => array( 'slug' => 'על הפרויקט' ),
+          'capability_type' => 'post',
+          'has_archive' => true, 
+          'label'=> 'abouttheproject',
+          'hierarchical' => false,
+          'show_in_rest' => true,
+          'taxonomies' => array('category'),
+          'menu_position' => null,
+          'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
+          ); 
+ 
+        register_post_type( 'abouttheproject', $args );
+    }
+add_action( 'init', 'abouttheproject_custom_init');
+function clients_custom_init() {
+      $labels = array(
+          'name' => 'הלקוחות שלנו',
+          'singular_name' => 'הלקוחות שלנו',
+          'add_new' => 'הוסף הלקוחות שלנו חדש',
+          'add_new_item' => 'הוסף לקוחות שלנו חדש',
+          'edit_item' => 'ערוך לקוחות שלנו',
+          'new_item' => 'על לקוחות שלנו חדש',
+          'all_items' => 'כל על לקוחות שלנו',
+          'view_item' => 'הצג על לקוחות שלנו',
+          'search_items' => 'חפש על לקוחות שלנו',
+          'not_found' =>  'לא נמצא על לקוחות שלנו',
+          'not_found_in_trash' => 'לא נמצא על לקוחות שלנו', 
+          'parent_item_colon' => '',
+          'menu_name' => 'הלקוחות שלנו',
+          );
+ 
+      $args = array(
+          'labels' => $labels,
+          'exclude_from_search' => false,
+          'public' => true,
+          'publicly_queryable' => true,
+          'show_ui' => true, 
+          'show_in_menu' => true, 
+          'query_var' => true,
+          'rewrite' => array( 'slug' => 'על הפרויקט' ),
+          'capability_type' => 'post',
+          'has_archive' => true, 
+          'label'=> 'clients',
+          'hierarchical' => false,
+          'show_in_rest' => true,
+          'taxonomies' => array('category'),
+          'menu_position' => null,
+          'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
+          ); 
+ 
+        register_post_type( 'clients', $args );
+    }
+add_action( 'init', 'clients_custom_init');
+function beforecontactus_custom_init() {
+      $labels = array(
+          'name' => 'פס כתום',
+          'singular_name' => 'פס כתום',
+          'add_new' => 'הוסף פס כתוםו חדש',
+          'add_new_item' => 'הוסף פס כתוםחדש',
+          'edit_item' => 'ערוך פס כתום',
+          'new_item' => 'על פס כתום חדש',
+          'all_items' => 'כל פס כתום',
+          'view_item' => 'הצג פס כתום',
+          'search_items' => 'חפש פס כתום',
+          'not_found' =>  'לא נמצא פס כתום',
+          'not_found_in_trash' => 'לא פס כתוםו', 
+          'parent_item_colon' => '',
+          'menu_name' => 'פס כתום',
+          );
+ 
+      $args = array(
+          'labels' => $labels,
+          'exclude_from_search' => false,
+          'public' => true,
+          'publicly_queryable' => true,
+          'show_ui' => true, 
+          'show_in_menu' => true, 
+          'query_var' => true,
+          'rewrite' => array( 'slug' => 'על הפרויקט' ),
+          'capability_type' => 'post',
+          'has_archive' => true, 
+          'label'=> 'orangesection',
+          'hierarchical' => false,
+          'show_in_rest' => true,
+          'taxonomies' => array('category'),
+          'menu_position' => null,
+          'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
+          ); 
+ 
+        register_post_type( 'beforecontactus', $args );
+    }
+add_action( 'init', 'beforecontactus_custom_init');
 function project_custom_init() {
       $labels = array(
           'name' => 'פרוייקטים',
