@@ -47,7 +47,7 @@ Template Name: orange section 6
 			<div class="row">
 				<div class="col-lg-6 text-area"><?php the_field('text_orange'); ?></div>
 				<div class="col-lg-6 button-area">
-					<button href="#" type="button" class="btn btn-lg"><?php the_field('button_orange'); ?></button>
+					<button href="<?php the_field('url_button_orange');?>" type="button" class="btn btn-lg"><?php the_field('button_orange'); ?></button>
 				</div>
 			</div>
 		</div>
