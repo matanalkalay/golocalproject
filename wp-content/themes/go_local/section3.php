@@ -19,7 +19,7 @@
    			 height: 83%;
 		}
 		.plrx_enable {
-		background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/coffee-1276781_1920.jpg';?>");
+		background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_pic.png';?>");
 		/* Set a specific height */
 	      min-height: 500px; 
 
@@ -115,7 +115,7 @@
 <body>
 <section id="section3" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" class="plrx_enable">
 <section id="section3"> 
-<img src="<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_p3.png';?>">
+<!-- <img src="<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_p3.png';?>"> -->
 
     <div class="container">
         <div class="row">
