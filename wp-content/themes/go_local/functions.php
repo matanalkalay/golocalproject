@@ -491,6 +491,45 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 
 }
+function about_senior_custom_init() {
+      $labels = array(
+          'name' => 'אודות תוכנית קידום',
+          'singular_name' => 'אודות תוכנית קידום',
+          'add_new' => 'הוסף אודות תוכנית קידום חדש',
+          'add_new_item' => 'הוסף אודות תוכנית קידום חדש',
+          'edit_item' => 'ערוך אודות תוכנית קידום',
+          'new_item' => 'אודות תוכנית קידום חדש',
+          'all_items' => 'כל אודות תוכנית קידום',
+          'view_item' => 'הצג אודות תוכנית קידום',
+          'search_items' => 'חפש אודות תוכנית קידום',
+          'not_found' =>  'לא נמצא אודות תוכנית קידום',
+          'not_found_in_trash' => 'לא נמצא אודות תוכנית קידום בפח', 
+          'parent_item_colon' => '',
+          'menu_name' => 'אודות תוכנית קידום',
+          );
+ 
+      $args = array(
+          'labels' => $labels,
+          'exclude_from_search' => false,
+          'public' => true,
+          'publicly_queryable' => true,
+          'show_ui' => true, 
+          'show_in_menu' => true, 
+          'query_var' => true,
+          'rewrite' => array( 'slug' => 'אודות תוכנית קידום' ),
+          'capability_type' => 'post',
+          'has_archive' => true, 
+          'show_in_rest' => true,
+           'label'=> 'about_senior',
+          'hierarchical' => false,
+          'taxonomies' => array('category'),
+          'menu_position' => null,
+          'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
+          ); 
+ 
+        register_post_type( 'about_senior', $args );
+    }
+add_action( 'init', 'about_senior_custom_init');
 function senior_custom_init() {
       $labels = array(
           'name' => 'בוגרים',
