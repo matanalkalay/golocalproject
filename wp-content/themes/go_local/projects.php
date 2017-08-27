@@ -22,7 +22,7 @@ get_header(); ?>
 </head>
 <style type="text/css">
   .allProjets{
-padding-top: 30%;
+padding-top: 35%;
 }
 .search-projects {
   text-align: center;
