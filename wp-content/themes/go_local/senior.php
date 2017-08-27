@@ -52,12 +52,31 @@ get_header(); ?>
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
 }
 
  .search-senior input:focus {
     width: 30%;
-}  
+} 
+.search-senior select {
+  width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+ .search-senior select:focus {
+    width: 30%;
+}   
 
 .top-area-profile img {
   border-radius: 50%;
@@ -185,6 +204,11 @@ aside:hover .profile-social-links {
 .allSeniors h2 {
   text-align: center;
   margin-bottom: 5%;
+}
+.style-p {
+  margin-top: 1%;
+  color: black;
+  font-size: larger;
 }
 
 
