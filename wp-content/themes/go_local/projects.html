@@ -7,18 +7,29 @@
 
    <div class="container search-projects">
 	     <input type="text" name="search" placeholder="חפש בין מגוון הפרויקטים שלנו" ng-model="query"/>
-        <P></P>
-       <select name="Query_typeOfTheWebSite" ng-model="Query_typeOfTheWebSite" />
+        <P>בחר את סוג האתר </P>
+       <select name="Query_typeOfTheWebSite" ng-model="Query_typeOfTheWebSite"  />
           <option value="תדמית">אתר תדמית</option>
           <option value="חברתית">רשת חברתית</option>
           <option value="עיסקי">אתר עיסקי</option>
-          <option value=" ">כל האתרים</option>
+          <option value=" " >כל האתרים</option>
       </select>
+      <br>
+      <p> סנן לפי מחזור:</p>
+       <select name="Query_typeOfTheWebSite" ng-model="Query_class" />
+          <option value="מחזור-א">מחזור-א</option>
+          <option value="מחזור-ב">מחזור-ב</option>
+          <option value="מחזור-ג">מחזור-ג</option>
+          <option  value=" ">כל המחזורים</option>
+      </select>
+     
   </div>
+
+
 	<div class="allProjets" ng-controller="myCtrl" > 
 	
 		<ul>
-		<li ng-repeat="post in project | filter:query | filter:Query_typeOfTheWebSite">  
+		<li ng-repeat="post in project | filter:query | filter:Query_typeOfTheWebSite |filter:Query_class">  
 		<article class="card"> 
   <div class="card__thumb">
     <a href="#"> <img ng-src="{{post.acf.project_img.url}}" alt="" /></a>
@@ -32,6 +43,7 @@
       <p>שם הלקוח: {{post.acf.client_name}}</p>
       <p>סוג האתר:{{post.acf.website_type}}</p>
       <p>שמות המפתחים: {{post.acf.developers_name}}</p>
+      <p>{{post.acf.developers_class}}</p>
     </p>
     <a href= {{post.acf.kisor_web}} class="myButton">קישור לפרויקט</a>
   </div> 
