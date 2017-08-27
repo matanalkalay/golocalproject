@@ -7,7 +7,7 @@
 
    <div class="container search-projects">
 	     <input type="text" name="search" placeholder="חפש בין מגוון הפרויקטים שלנו" ng-model="query"/>
-        <P>בחר את סוג האתר </P>
+        <P class="style-p">בחר את סוג האתר </P>
        <select name="Query_typeOfTheWebSite" ng-model="Query_typeOfTheWebSite"  />
           <option value="תדמית">אתר תדמית</option>
           <option value="חברתית">רשת חברתית</option>
@@ -15,7 +15,7 @@
           <option value=" " >כל האתרים</option>
       </select>
       <br>
-      <p> סנן לפי מחזור:</p>
+      <p class="style-p"> סנן לפי מחזור:</p>
        <select name="Query_class" ng-model="Query_class" />
           <option value="מחזור-א">מחזור-א</option>
           <option value="מחזור-ב">מחזור-ב</option>
@@ -43,7 +43,7 @@
       <p>שם הלקוח: {{post.acf.client_name}}</p>
       <p>סוג האתר:{{post.acf.website_type}}</p>
       <p>שמות המפתחים: {{post.acf.developers_name}}</p>
-      <p>{{post.acf.developers_class}}</p>
+      <p class="mahzorim">{{post.acf.developers_class}}</p>
     </p>
     <a href= {{post.acf.kisor_web}} class="myButton">קישור לפרויקט</a>
   </div> 

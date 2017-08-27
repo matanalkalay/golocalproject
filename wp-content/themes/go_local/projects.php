@@ -247,6 +247,14 @@ body {
   position:relative;
   top:1px;
 }
+.mahzorim {
+  display: none!important;
+}
+.style-p {
+  margin-top: 1%;
+  color: white;
+  font-size: larger;
+}
 @media screen and (max-width: 650px) {
   .allProjets{
 padding-top: 50%;
