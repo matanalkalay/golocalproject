@@ -113,6 +113,13 @@
     </head>
 
 <body>
+<?php 
+ $args = array(
+        'post_type' => array( 'about_our_project')
+      );
+      query_posts( $args );
+ ?>
+<?php while ( have_posts() ) : the_post(); ?>
 <section id="section3" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" class="plrx_enable">
 <section id="section3"> 
 <!-- <img src="<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_p3.png';?>"> -->
@@ -120,8 +127,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">אודות התוכנית שלנו</h2>
-                <h3 class="section-subheading">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף קונדימנטום קורוס בליקרה </h3>
+                <h2 class="section-heading"><?php the_field('title_About_our_progrem'); ?></h2>
+                <h3 class="section-subheading"><?php the_field('opening_About_our_progrem'); ?> </h3>
             </div>
         </div>
         <div class="row text-center servies wow fadeInRight" data-wow-duration="1s">
@@ -130,8 +137,8 @@
                <div class="circle1">
               	 	<i class="fa fa-phone" aria-hidden="true"></i>
                </div>
-                <h4 class="service-heading">מיקור חוץ</h4>
-                <p class="service-subheading">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד  </p>
+                <h4 class="service-heading"><?php the_field('first_title_About_our_progrem'); ?></h4>
+                <p class="service-subheading"><?php the_field('first_text_about_our_progrem'); ?></p>
             </div>
             </div>
             <div class="col-md-4 sevice2">
@@ -139,8 +146,8 @@
                 <div class="circle2">
 				<i class="fa fa-user-circle" aria-hidden="true"></i>               
 				</div>
-                <h4 class="service-heading">מערכות מורכבות</h4>
-                <p class="service-subheading">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד </p>
+                <h4 class="service-heading"><?php the_field('sec_title_About_our_progrem'); ?></h4>
+                <p class="service-subheading"><?php the_field('sec_text_About_our_progrem'); ?></p>
             </div>
             </div>
             <div class="col-md-4 sevice3">
@@ -148,11 +155,12 @@
                <div class="circle3">
               	 	<i class="fa fa-commenting-o" aria-hidden="true"></i>
                </div>
-                <h4 class="service-heading">אתרי תדמית ותוכן</h4>
-                <p class="service-subheading">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד</p> 
+                <h4 class="service-heading"><?php the_field('third_title_About_our_progrem'); ?></h4>
+                <p class="service-subheading"><?php the_field('third_text_About_our_progrem'); ?></p> 
             </div>
         </div>
     </div>
 </div>
 </section>
 </section>
+<?php endwhile; // end of the loop. ?>
