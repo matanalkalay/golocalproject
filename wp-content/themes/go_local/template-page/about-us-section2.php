@@ -47,11 +47,11 @@ Template Name: about us section 2
 <body>
 	<div class="section2">
 		<img src="<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_copy.png';?>">
-		<div class="container">
+		<div class="container" id="section2">
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="title-text">
-						<h1>אודות</h1>
+						<h1 id="section2">אודות</h1>
 					</div>
 				</div>
 			</div>
