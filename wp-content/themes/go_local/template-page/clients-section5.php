@@ -59,7 +59,6 @@ Template Name: clients section 5
   <script type="text/javascript">
   	
   </script>
-  <p id="section4"></p>
   <div class="testimonials" id="testimonials">
 		<div class="container" >
 			<h1>לקוחות מספרים</h1>
