@@ -47,7 +47,7 @@ Template Name: welcome section 1
       query_posts( $args );
  ?>
 <?php while ( have_posts() ) : the_post(); ?>
-		<div class="section1"  style="background-image: url(<?php echo site_url() . '/wp-content/uploads/2017/08/apple-1841281_1920-min.jpg';?>)">
+		<div class="section1"  style="background-image: url(<?php echo site_url() . '/wp-content/uploads/2017/09/about_bkg_pic1-1.png';?>)">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">

@@ -69,7 +69,8 @@ padding-top: 35%;
 
 
 .project-area{
-  background-color: #06BFB6;
+  background-color: #42BCB0;
+  opacity: 9%;
   padding-top: 1%;
 }
 .head-title {

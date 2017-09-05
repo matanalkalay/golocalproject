@@ -6,7 +6,7 @@ Template Name: video section 4
 <style type="text/css">
 .section4 {
 	/*background-color: #42BCB0;*/
-	background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/coffee-1276778_1920.jpg';?>");
+	background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/09/video_bkg_pic.png';?>");
     padding: 5%;
     /* Set a specific height */
 	      min-height: 500px; 

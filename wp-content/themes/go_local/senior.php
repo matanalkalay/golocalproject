@@ -26,7 +26,8 @@ get_header(); ?>
     /*padding-bottom: 10%;*/
     padding-top: 5%;
     /*background-color: lightgray;*/ 
-    background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/office-1734485_1920-min.jpg';?>"); 
+    background-color:#E8C433;
+    opacity: 9%;
       /* Set a specific height */
       min-height: 500px; 
 

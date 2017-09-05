@@ -12,7 +12,7 @@
 
      }
     .plrx_enable {
-      background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_pic-p2-1.png';?>"); 
+      background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/09/bkgpic_bogrim.png';?>"); 
       /* Set a specific height */
       min-height: 500px; 
 

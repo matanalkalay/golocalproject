@@ -19,7 +19,7 @@
    			 height: 83%;
 		}
 		.plrx_enable {
-		background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_pic.png';?>");
+		background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/09/about_bkg_p2_projects.png';?>");
 		/* Set a specific height */
 	      min-height: 500px; 
 

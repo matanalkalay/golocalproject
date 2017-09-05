@@ -5,10 +5,11 @@ Template Name: three column section 3
 ?>
 <style type="text/css">
 	.section3 {
+
 		padding-top: 5%;
 	}
 	#section3 {
-	    padding-bottom: 5%;
+	    padding-bottom: 5%;background: linear-gradient(180deg,rgba(255,164,79,0)0%,#ffb719 100%);
 }
 	.section-heading {
 		display: inline-block;

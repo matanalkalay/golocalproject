@@ -33,7 +33,8 @@ li{
 * CARD
 **/
 .section7 {
-  background-color: #00BFB6; 
+  background-color:#E8C433;
+  opacity: 9%; 
   margin-top: -2%;
 
 }

@@ -5,7 +5,7 @@ Template Name: orange section 6
 ?>
 <style type="text/css">
 	body .section6 {
-		background-color: #EDA031;
+		background-color:#FFD24D;
 		padding-top: 5%;
 	}
 	.button-area {

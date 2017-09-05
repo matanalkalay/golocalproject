@@ -5,7 +5,8 @@ Template Name: contact us section 8
 ?>
 <style type="text/css">
 	.section8 {
-		background-color: #ED9C28;
+		background-color: #42BCB0;
+		opacity: 9%;
 		height: 400px;
 	}
 	form {

@@ -5,16 +5,17 @@ Template Name: about us section 2
 ?>
 <style type="text/css">
 	.section2 {
-		background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/08/about_bkg_pic.png';?>"); 
+		background-image: url("<?php echo site_url() . '/wp-content/uploads/2017/09/about_bkg_pic2.png';?>"); 
 		padding-bottom: 9%;
 		/* Set a specific height */
-	      min-height: 500px; 
+	      min-height: 498px; 
 
 	      /* Create the parallax scrolling effect */
 	      background-attachment: fixed;
 	      background-position: center;
 	      background-repeat: no-repeat;
 	      background-size: cover;
+
 	}
 	.title-text {
 		color: white;
@@ -23,6 +24,7 @@ Template Name: about us section 2
 	    margin-right: 50%;
 	}
 	.box-text {
+font-size: 18px;
 	    background-image: url(http://localhost:8080/golocalproject/wp-content/uploads/2017/08/Rectangle-3.png);    
 	    background-size: cover;
 	    color: white;
@@ -33,6 +35,7 @@ Template Name: about us section 2
 	    font-size: larger;
 	}
 	.just-text {
+		font-size: 18px;
 		color: white;
     	font-size: medium;
     	margin-bottom: 2%;

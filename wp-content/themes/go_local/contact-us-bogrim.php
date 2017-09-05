@@ -5,7 +5,8 @@ Template Name: contact us section 8
 ?>
 <style type="text/css">
 	.section8 {
-		background-color: #ED9C28; 
+		 background-color:#E8C433;
+    opacity: 9%;
 		height: 400px;
 	}
 	form {
@@ -17,11 +18,11 @@ Template Name: contact us section 8
 	border: 1px solid white;
     border-radius: 10px;
     padding: 1%;
-    background-color:#ED9C28;
+    background-color:#E8C433;
 	}
 	.section8 .wpcf7-submit {
 	width: 16%;
-    color: #F7A74A;
+    color: #E8C433;
     background: white;
     box-shadow: 0px 0px 10px #242121;
     border-radius: 20px;
