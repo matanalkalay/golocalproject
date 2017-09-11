@@ -17,61 +17,44 @@
             <div class="allProjets" ng-controller="myCtrl" > 
   
     <ul>
-    <li ng-repeat="post in senior | filter:query |filter:Query_class ">  
- <div class="col-lg-4 col-xs-6 senior_profile">
-            <div class="singleSenior">
-                <aside class="profile-card">
-                    <div class="top-area-profile">
-                        <!-- here’s the avatar -->
-                        <img class="senior_img"  ng-src="{{post.acf.senior_img.url}}"  />
-
-                          <!-- the username -->
-                          <h2>{{post.acf.senior_name}}</h2>
-                    
-                        
-                          <h2>- Full Stack Web Developer -</h2>
-
-                    </div>
-
-                    <!-- bit of a bio; who are you? -->
-                    <div class="profile-bio">
-                     <p>{{post.acf.senior_city}}</p>
-                      <p>{{post.acf.senior_class}}</p>
+    <li ng-repeat="post in senior | filter:query |filter:Query_class ">
+    <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="team-member">
+                                <div class="team-img">
+                                <img class="img-responsive"  ng-src="{{post.acf.senior_img.url}}"  />
+                                </div>
+                                <div class="team-hover">
+                                    <div class="desk">
+                                        <h4>Hi There !</h4>
+                                        <p>{{post.acf.senior_city}}</p>
+                             <p>{{post.acf.senior_class}}</p>
                       
                         <p>פרוייקטים שלקחתי בהם חלק :{{post.acf.senior_projets}}</p>
                         <p>תוכלו לראות את הפרוייקטים שלי בעמוד הפרויקטים באתר.</p>
-                    </div>
-           
+                                    </div>
+                                    <div class="s-link">
+                                        <a href="{{post.acf.facebook_address}}"><i class="fa fa-facebook"></i></a>
+                                        <a href="{{post.acf.linkedin_address}}"><i class="fa fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-title">
+                                <h5>{{post.acf.senior_name}}</h5>
+                                <span>Full Stack Web Developer</span>
+                            </div>
+                        </div>
+                       
+                        </div>
 
-  <!-- some social links to show off -->
-  <ul class="profile-social-links">
+            </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
 
-    <!-- twitter - el clásico  -->
-    <li>
-      <a ng-href="{{post.acf.facebook_address}}">
-        <img src="http://www.bluedot360.co.il/wp-content/uploads/2015/09/website-icons_Social-Media_01.png">
-      </a>
-    </li>
-
-    <!-- envato – use this one to link to your marketplace profile -->
-    
-
-   
-
-  </ul>
-</aside>
-</div>
-                
-         <!--  </div> -->
-          <!-- end row in loop -->
-
- <!--  </div> --> 
-  <!-- end container in loop -->
-  </div>
+ 
       
-      </div>
-      </div>
-      </div>
-   </div>
-   </div> 
-   
+    
