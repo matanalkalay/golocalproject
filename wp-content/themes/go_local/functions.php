@@ -106,30 +106,30 @@ function welcome_custom_init() {
           'view_item' => 'הצג שורה',
           'search_items' => 'חפש שורות',
           'not_found' =>  'לא נמצא שורה',
-          'not_found_in_trash' => 'לא נמצא שורה ', 
+          'not_found_in_trash' => 'לא נמצא שורה ',
           'parent_item_colon' => '',
           'menu_name' => 'ברוכים הבאים',
           );
- 
+
       $args = array(
           'labels' => $labels,
           'exclude_from_search' => false,
           'public' => true,
           'publicly_queryable' => true,
-          'show_ui' => true, 
-          'show_in_menu' => true, 
+          'show_ui' => true,
+          'show_in_menu' => true,
           'query_var' => true,
           'rewrite' => array( 'slug' => 'ברוך' ),
           'capability_type' => 'post',
-          'has_archive' => true, 
+          'has_archive' => true,
           'label'=> 'welcome',
           'hierarchical' => false,
           'show_in_rest' => true,
           'taxonomies' => array('category'),
           'menu_position' => null,
           'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
-          ); 
- 
+          );
+
         register_post_type( 'welcome', $args );
     }
 add_action( 'init', 'welcome_custom_init');
@@ -147,30 +147,30 @@ function aboutus_custom_init() {
           'view_item' => 'הצג אודות',
           'search_items' => 'חפש אודות',
           'not_found' =>  'לא נמצא אודות',
-          'not_found_in_trash' => 'לא נמצא אודות', 
+          'not_found_in_trash' => 'לא נמצא אודות',
           'parent_item_colon' => '',
           'menu_name' => 'אודות',
           );
- 
+
       $args = array(
           'labels' => $labels,
           'exclude_from_search' => false,
           'public' => true,
           'publicly_queryable' => true,
-          'show_ui' => true, 
-          'show_in_menu' => true, 
+          'show_ui' => true,
+          'show_in_menu' => true,
           'query_var' => true,
           'rewrite' => array( 'slug' => 'אודות' ),
           'capability_type' => 'post',
-          'has_archive' => true, 
+          'has_archive' => true,
           'label'=> 'aboutus',
           'hierarchical' => false,
           'show_in_rest' => true,
           'taxonomies' => array('category'),
           'menu_position' => null,
           'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
-          ); 
- 
+          );
+
         register_post_type( 'aboutus', $args );
     }
 add_action( 'init', 'aboutus_custom_init');
@@ -186,30 +186,30 @@ function abouttheproject_custom_init() {
           'view_item' => 'הצג על הפרויקט',
           'search_items' => 'חפש על הפרויקט',
           'not_found' =>  'לא נמצא על הפרויקט',
-          'not_found_in_trash' => 'לא נמצא על הפרויקט', 
+          'not_found_in_trash' => 'לא נמצא על הפרויקט',
           'parent_item_colon' => '',
           'menu_name' => 'על הפרויקט',
           );
- 
+
       $args = array(
           'labels' => $labels,
           'exclude_from_search' => false,
           'public' => true,
           'publicly_queryable' => true,
-          'show_ui' => true, 
-          'show_in_menu' => true, 
+          'show_ui' => true,
+          'show_in_menu' => true,
           'query_var' => true,
           'rewrite' => array( 'slug' => 'על הפרויקט' ),
           'capability_type' => 'post',
-          'has_archive' => true, 
+          'has_archive' => true,
           'label'=> 'abouttheproject',
           'hierarchical' => false,
           'show_in_rest' => true,
           'taxonomies' => array('category'),
           'menu_position' => null,
           'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
-          ); 
- 
+          );
+
         register_post_type( 'abouttheproject', $args );
     }
 add_action( 'init', 'abouttheproject_custom_init');
@@ -225,30 +225,30 @@ function clients_custom_init() {
           'view_item' => 'הצג על לקוחות שלנו',
           'search_items' => 'חפש על לקוחות שלנו',
           'not_found' =>  'לא נמצא על לקוחות שלנו',
-          'not_found_in_trash' => 'לא נמצא על לקוחות שלנו', 
+          'not_found_in_trash' => 'לא נמצא על לקוחות שלנו',
           'parent_item_colon' => '',
           'menu_name' => 'הלקוחות שלנו',
           );
- 
+
       $args = array(
           'labels' => $labels,
           'exclude_from_search' => false,
           'public' => true,
           'publicly_queryable' => true,
-          'show_ui' => true, 
-          'show_in_menu' => true, 
+          'show_ui' => true,
+          'show_in_menu' => true,
           'query_var' => true,
           'rewrite' => array( 'slug' => 'על הפרויקט' ),
           'capability_type' => 'post',
-          'has_archive' => true, 
+          'has_archive' => true,
           'label'=> 'clients',
           'hierarchical' => false,
           'show_in_rest' => true,
           'taxonomies' => array('category'),
           'menu_position' => null,
           'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
-          ); 
- 
+          );
+
         register_post_type( 'clients', $args );
     }
 add_action( 'init', 'clients_custom_init');
@@ -264,30 +264,30 @@ function beforecontactus_custom_init() {
           'view_item' => 'הצג פס כתום',
           'search_items' => 'חפש פס כתום',
           'not_found' =>  'לא נמצא פס כתום',
-          'not_found_in_trash' => 'לא פס כתום', 
+          'not_found_in_trash' => 'לא פס כתום',
           'parent_item_colon' => '',
           'menu_name' => 'פס כתום',
           );
- 
+
       $args = array(
           'labels' => $labels,
           'exclude_from_search' => false,
           'public' => true,
           'publicly_queryable' => true,
-          'show_ui' => true, 
-          'show_in_menu' => true, 
+          'show_ui' => true,
+          'show_in_menu' => true,
           'query_var' => true,
           'rewrite' => array( 'slug' => 'פס כתום' ),
           'capability_type' => 'post',
-          'has_archive' => true, 
+          'has_archive' => true,
           'label'=> 'beforecontactus',
           'hierarchical' => false,
           'show_in_rest' => true,
           'taxonomies' => array('category'),
           'menu_position' => null,
           'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
-          ); 
- 
+          );
+
         register_post_type( 'beforecontactus', $args );
     }
 add_action( 'init', 'beforecontactus_custom_init');
@@ -303,30 +303,30 @@ function about_our_project_custom_init() {
           'view_item' => 'הצג אודות התוכנית שנלו',
           'search_items' => 'חפש אודות התוכנית שלנו',
           'not_found' =>  'לא נמצא אודות התוכנית שלנו',
-          'not_found_in_trash' => 'לא נמצא אודות התוכנית שלנו', 
+          'not_found_in_trash' => 'לא נמצא אודות התוכנית שלנו',
           'parent_item_colon' => '',
           'menu_name' => 'אודות התוכנית שלנו',
           );
- 
+
       $args = array(
           'labels' => $labels,
           'exclude_from_search' => false,
           'public' => true,
           'publicly_queryable' => true,
-          'show_ui' => true, 
-          'show_in_menu' => true, 
+          'show_ui' => true,
+          'show_in_menu' => true,
           'query_var' => true,
           'rewrite' => array( 'slug' => 'אודות התוכנית שלנו' ),
           'capability_type' => 'post',
-          'has_archive' => true, 
+          'has_archive' => true,
           'show_in_rest' => true,
            'label'=> 'about_our_project',
           'hierarchical' => false,
           'taxonomies' => array('category'),
           'menu_position' => null,
           'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
-          ); 
- 
+          );
+
         register_post_type( 'about_our_project', $args );
     }
 add_action( 'init', 'about_our_project_custom_init');
@@ -342,34 +342,34 @@ function project_custom_init() {
           'view_item' => 'הצג פרוייקט',
           'search_items' => 'חפש פרוייקט',
           'not_found' =>  'לא נמצא פרוייקט',
-          'not_found_in_trash' => 'לא נמצא פרוייקט בפח', 
+          'not_found_in_trash' => 'לא נמצא פרוייקט בפח',
           'parent_item_colon' => '',
           'menu_name' => 'פרוייקטים',
           );
- 
+
       $args = array(
           'labels' => $labels,
           'exclude_from_search' => false,
           'public' => true,
           'publicly_queryable' => true,
-          'show_ui' => true, 
-          'show_in_menu' => true, 
+          'show_ui' => true,
+          'show_in_menu' => true,
           'query_var' => true,
           'rewrite' => array( 'slug' => 'פרוייקט' ),
           'capability_type' => 'post',
-          'has_archive' => true, 
+          'has_archive' => true,
           'label'=> 'project',
           'hierarchical' => false,
           'show_in_rest' => true,
           'taxonomies' => array('category'),
           'menu_position' => null,
           'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
-          ); 
- 
+          );
+
         register_post_type( 'project', $args );
     }
 add_action( 'init', 'project_custom_init');
- 
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -426,7 +426,7 @@ function my_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles');
 function reg_scripts() {
-    
+
     wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array(), true );
     wp_enqueue_script('bxslider-js',get_template_directory_uri() . '/js/jquery.bxslider.js', array('jquery'), true);
     wp_enqueue_script('custom-js',get_template_directory_uri() . '/js/script.js', array('jquery'), true);
@@ -444,7 +444,7 @@ function theme_js() {
 
 add_action( 'wp_enqueue_scripts', 'theme_js');
 function enqueue_our_required_stylesheets(){
-	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 }
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
@@ -469,7 +469,7 @@ function go_local_scripts() {
 add_action( 'wp_enqueue_scripts', 'go_local_scripts' );
 
 /**
- 
+
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
@@ -503,30 +503,30 @@ function about_senior_custom_init() {
           'view_item' => 'הצג אודות תוכנית קידום',
           'search_items' => 'חפש אודות תוכנית קידום',
           'not_found' =>  'לא נמצא אודות תוכנית קידום',
-          'not_found_in_trash' => 'לא נמצא אודות תוכנית קידום בפח', 
+          'not_found_in_trash' => 'לא נמצא אודות תוכנית קידום בפח',
           'parent_item_colon' => '',
           'menu_name' => 'אודות תוכנית קידום',
           );
- 
+
       $args = array(
           'labels' => $labels,
           'exclude_from_search' => false,
           'public' => true,
           'publicly_queryable' => true,
-          'show_ui' => true, 
-          'show_in_menu' => true, 
+          'show_ui' => true,
+          'show_in_menu' => true,
           'query_var' => true,
           'rewrite' => array( 'slug' => 'אודות תוכנית קידום' ),
           'capability_type' => 'post',
-          'has_archive' => true, 
+          'has_archive' => true,
           'show_in_rest' => true,
            'label'=> 'about_senior',
           'hierarchical' => false,
           'taxonomies' => array('category'),
           'menu_position' => null,
           'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
-          ); 
- 
+          );
+
         register_post_type( 'about_senior', $args );
     }
 add_action( 'init', 'about_senior_custom_init');
@@ -542,45 +542,33 @@ function senior_custom_init() {
           'view_item' => 'הצג בוגר',
           'search_items' => 'חפש בוגרים',
           'not_found' =>  'לא נמצא בוגר',
-          'not_found_in_trash' => 'לא נמצא בוגר בפח', 
+          'not_found_in_trash' => 'לא נמצא בוגר בפח',
           'parent_item_colon' => '',
           'menu_name' => 'בוגרים',
           );
- 
+
       $args = array(
           'labels' => $labels,
           'exclude_from_search' => false,
           'public' => true,
           'publicly_queryable' => true,
-          'show_ui' => true, 
-          'show_in_menu' => true, 
+          'show_ui' => true,
+          'show_in_menu' => true,
           'query_var' => true,
           'rewrite' => array( 'slug' => 'בוגר' ),
           'capability_type' => 'post',
-          'has_archive' => true, 
+          'has_archive' => true,
           'show_in_rest' => true,
            'label'=> 'senior',
           'hierarchical' => false,
           'taxonomies' => array('category'),
           'menu_position' => null,
           'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments', 'editor' )
-          ); 
- 
+          );
+
         register_post_type( 'senior', $args );
     }
 add_action( 'init', 'senior_custom_init');
-function my_scripts() {
-	
-	wp_enqueue_script(
-		'angularjs',
-		get_stylesheet_directory_uri() . 'lib/angular/angular.min.js'
-	);
-	wp_enqueue_script(
-		'angularjs-route',
-		get_stylesheet_directory_uri() . 'lib/angular/angular-route.min.js'
-	);
-}
-add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
 
 function wp_api_encode_acf($data,$post,$context){

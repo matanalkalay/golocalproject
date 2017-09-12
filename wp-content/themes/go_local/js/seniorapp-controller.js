@@ -1,10 +1,9 @@
 (function(){
 
-	var myApp = angular.module('myApp', ['ui.bootstrap', 'ngAnimate']);
-	myApp.controller('myCtrl', ['$scope', '$http', function($scope, $http){
+	myApp.controller('myCtrl', ['seniorAppConfig', '$scope', '$http', function(seniorAppConfig, $scope, $http){
 		$http({
 			method : 'GET',
-			url : 'http://localhost:8080/golocalproject/wp-json/wp/v2/senior'
+			url : seniorAppConfig.ajaxUrl
 		}).then(function success(response){
 			$scope.senior = response.data;
 			console.log(response);
