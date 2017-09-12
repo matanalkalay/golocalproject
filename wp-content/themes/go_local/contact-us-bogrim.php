@@ -5,7 +5,7 @@ Template Name: contact us section 8
 ?>
 <style type="text/css">
 	.section8 {
-		 background-color:#E8C433;
+		 background-color:#F6AA48;
     opacity: 9%;
 		height: 400px;
 	}
@@ -18,7 +18,7 @@ Template Name: contact us section 8
 	border: 1px solid white;
     border-radius: 10px;
     padding: 1%;
-    background-color:#E8C433;
+    background-color:#F6AA48;
 	}
 	.section8 .wpcf7-submit {
 	width: 16%;

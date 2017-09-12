@@ -71,6 +71,22 @@ Template Name: three column section 3
 		color: #546E7A;
     	margin-bottom: 10%;
 	}
+	@media screen and (max-width: 768px){
+		.section-subheading {
+		    font-size: x-large;
+		    margin-top: 5%;
+		    margin-bottom: 5%;
+		}
+		.service-heading {
+		    color: #546E7A;
+		    margin-bottom: 10%;
+		    font-size: x-large;
+		}
+		.text-muted {
+		    color: #777;
+		    font-size: x-large;
+		}
+	}
 </style>
 <body>
 <?php 

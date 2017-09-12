@@ -31,7 +31,21 @@ Template Name: orange section 6
 	float: right;
 	margin-bottom: 5%;
 }
-
+@media screen and (max-width: 768px) {
+	.text-area {
+	    font-size: x-large;
+	    float: right;
+	    margin-bottom: 5%;
+	    text-align: center;
+	    margin-right: 10%;
+	}
+	button.btn-lg {
+	    padding: 15px 55px!important;
+	    font-size: 22px!important;
+	    line-height: 1.3333333!important;
+	    border-radius: 35px!important;
+	}
+}
 
 </style>
 <body>

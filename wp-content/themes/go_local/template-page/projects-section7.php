@@ -10,8 +10,9 @@ Template Name: projects section 7
     top: 70px;
 }
 .allProjets {
-    margin-top: 30%;
+    margin-top: 40%;
     margin-bottom: -17%;
+    margin-left: 15%;
 }
  h2{
 text-align: center;
@@ -33,15 +34,15 @@ li{
 * CARD
 **/
 .section7 {
-  background-color:#E8C433;
-  opacity: 9%; 
+  background-color:#15C0AB;;
+  /*opacity: 9%; */
   margin-top: -2%;
 
 }
 .card {
-    margin-left: 5%;
+    margin-left: 3%;
     margin-bottom: 5%;
-    width: 300px;
+    width: 280px;
     height: 500px;
     border: 1px solid #00BFB6;
     border-radius: 25px;
@@ -68,11 +69,13 @@ li{
 **/
 
 .card__thumb {
-  height: 245px;
-  overflow: hidden;
-  background-color: #000;
-  -webkit-transition: height 0.5s;
-  transition: height 0.5s;
+    height: 245px;
+    width: 278px;
+    margin: -6%;
+    overflow: hidden;
+    background-color: #000;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
 }
 .card__thumb img {
   display: block;
@@ -186,17 +189,61 @@ li{
   position:relative;
   top:1px;
 }
-
+@media screen and (max-width: 768px) {
+.card {
+    margin-left: 3%;
+    position: relative;
+    right: -105px;
+    top: 205px;
+    margin-bottom: 8%;
+    width: 280px;
+    height: 500px;
+    border: 1px solid #00BFB6;
+    border-radius: 25px;
+    display: inline-block;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
+    transform: translateX(-50%) translateY(-50%) translateZ(0);
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+}
+}
+@media screen and (max-width: 320px) {
+.card {
+    margin-left: 3%;
+    position: relative;
+    right: -136px;
+    top: 205px;
+    margin-bottom: 8%;
+    width: 280px;
+    height: 500px;
+    border: 1px solid #00BFB6;
+    border-radius: 25px;
+    display: inline-block;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
+    transform: translateX(-50%) translateY(-50%) translateZ(0);
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+}
+}
 </style>
 <body>
 <div class="section7">
-                 
-                     <div class="head-project">
-                     <h2>הפרויקטים שלנו</h2>
-                     </div>
-                       <div class="allProjets">
+<div class="container">
+  <div class="row">
+    <div class="head-project">
+       <h2>הפרויקטים שלנו</h2>
+    </div>
+  </div>
+  <div class="row">
+      <div class="allProjets col-md-12">
 
-	         
+           
                   <?php 
                
                       $args = array(
@@ -212,7 +259,7 @@ li{
                     // Start the loop.
                      $i = 1; while (have_posts() && $i < 4) : the_post(); ?>
                    
-      <article class="card">
+      <article class="card col-md-4">
  
   
                  <?php
@@ -247,10 +294,14 @@ li{
  <?php $i++; endwhile; ?>
  
       </div>
+</div>
+                 
+                     
+            
 
- </div>
+ </div> <!--end container -->
 
-    
+  </div> <!--end section7 - tree projects -->  
  
       <?php
  

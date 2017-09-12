@@ -26,7 +26,7 @@ get_header(); ?>
     /*padding-bottom: 10%;*/
     padding-top: 5%;
     /*background-color: lightgray;*/ 
-    background-color:#E8C433;
+    background-color:#F6AA48;
     opacity: 9%;
       /* Set a specific height */
       min-height: 500px; 
@@ -331,7 +331,72 @@ aside:hover .profile-social-links {
     letter-spacing: 1px;
 }
 
-
+@media screen and (max-width: 768px) {
+      #section4 {
+        color: white!important;
+        height: 100%!important;
+    }
+    #section4 img {
+        position: absolute;
+        opacity: 0.76;
+        width: 100%;
+        height: 148%!important;
+    }
+    #section4 .circle1 {
+      margin-bottom: 0%!important;
+      margin-right: 30%!important;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: block;
+      background: #fc4a1a;
+      background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+      background: linear-gradient(to right, #f7b733, #fc4a1a);
+      border: 1px solid #f7b733;
+      /* float: right; */
+  }
+  #section4 .circle2 {
+      margin-bottom: 0%!important;
+      margin-right: 30%!important;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: block;
+      background: #fc4a1a;
+      background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+      background: linear-gradient(to right, #f7b733, #fc4a1a);
+      border: 1px solid #f7b733;
+      /* float: right; */
+  }
+  #section4 .circle3 {
+      margin-bottom: 0%!important;
+      margin-right: 30%!important;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: block;
+      background: #fc4a1a;
+      background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+      background: linear-gradient(to right, #f7b733, #fc4a1a);
+      border: 1px solid #f7b733;
+      /* float: right; */
+  }
+    #section4 .service-heading {
+      display: block;
+      float: right;
+      margin-bottom: 8%;
+      margin-top: 10%;
+      margin-right: 6%;
+      font-size: 178%;
+      width: 100%!important;
+      color: white;
+      text-shadow: 2px 2px 12px #000000;
+  }
+  .section-heading {
+      margin-bottom: 4%;
+      text-align: center;
+  }
+}
 
 /*PROFILE IMAGE ANIMATE */
 

@@ -37,6 +37,17 @@ Template Name: welcome section 1
 	.addline-text h1 {
 	text-shadow: 2px 2px #685a5a;
 	}
+	@media screen and (max-width: 768px){
+		.addline-text {
+		    color: white;
+		    display: inline-block;
+		    position: absolute;
+		    top: 80px;
+		    right: 5%;
+		    text-align: center;
+		    font-size: 15px;
+		}
+	}
 </style>
 
 <body>

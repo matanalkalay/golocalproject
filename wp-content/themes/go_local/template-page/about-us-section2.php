@@ -46,6 +46,32 @@ font-size: 18px;
 		width: 100%;
 		height: 613px;
 	}
+	@media screen and (max-width: 768px) {
+		.title-text {
+		    color: white;
+		    border-bottom: 1px solid white;
+		    display: inline-block;
+		    margin-right: 40%;
+		}
+		.box-text {
+		    font-size: 22px;
+		    background-image: url(http://localhost:8080/golocalproject/wp-content/uploads/2017/08/Rectangle-3.png);
+		    background-size: cover;
+		    color: white;
+		    margin-top: 5%;
+		    margin-bottom: 5%;
+		    border-radius: 38px;
+		    padding: 3%;
+		    text-align: center;
+		}
+		.just-text {
+		    font-size: 18px;
+		    color: white;
+		    font-size: 22px;
+		    margin-bottom: 2%;
+		    text-align: center;
+		}
+	}
 </style>
 <body>
 <?php 

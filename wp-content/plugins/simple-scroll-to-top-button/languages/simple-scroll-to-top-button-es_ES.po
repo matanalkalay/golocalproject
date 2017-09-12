@@ -1,0 +1,440 @@
+# Translation of Plugins - Simple Scroll to Top Button - Development (trunk) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Simple Scroll to Top Button - Development (trunk) package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Plugins - Simple Scroll to Top Button - Development (trunk)\n"
+"POT-Creation-Date: 2017-08-10 16:03+0300\n"
+"PO-Revision-Date: 2017-08-10 16:03+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: simple-scroll-to-top-button.php\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/php/core.php:31 inc/php/page.php:47
+msgid "Settings"
+msgstr "Ajustes"
+
+#: inc/php/core.php:47
+msgid "Donate"
+msgstr "Hacer una donación"
+
+#: inc/php/core.php:62
+msgid "Scroll to Top"
+msgstr "Ir al inicio de la página"
+
+#: inc/php/messages.php:30
+msgid "Hello. I'm Arthur, the author of this plugin."
+msgstr ""
+
+#: inc/php/messages.php:32
+#, php-format
+msgid "Thank you for installing my plugin! I hope you will love it! %s"
+msgstr ""
+
+#: inc/php/messages.php:67
+msgid "You have installed an old version of this plugin."
+msgstr ""
+
+#: inc/php/messages.php:68
+msgid "Please update the plugin to the latest version, and all will be fine."
+msgstr ""
+
+#: inc/php/page.php:34
+#, php-format
+msgid "by %s Arthur Gareginyan %s"
+msgstr "por %s Arthur Gareginyan %s"
+
+#: inc/php/page.php:40
+msgid "Version"
+msgstr ""
+
+#: inc/php/page.php:48 inc/php/page.php:68
+msgid "Usage"
+msgstr ""
+
+#: inc/php/page.php:49
+msgid "F.A.Q."
+msgstr ""
+
+#: inc/php/page.php:50 inc/php/page.php:183 inc/php/settings.php:172 inc/php/sidebar.php:27
+msgid "Support"
+msgstr ""
+
+#: inc/php/page.php:51 inc/php/page.php:203
+msgid "Author"
+msgstr ""
+
+#: inc/php/page.php:52
+msgid "Store"
+msgstr ""
+
+#: inc/php/page.php:70
+msgid "To display the \"Scroll to Top\" button on the front end of your website, simply follow these steps:"
+msgstr ""
+
+#: inc/php/page.php:72
+msgid "Go to the \"Settings\" tab."
+msgstr ""
+
+#: inc/php/page.php:73
+msgid "Select the desired settings."
+msgstr ""
+
+#: inc/php/page.php:74
+msgid "Click the \"Save changes\" button."
+msgstr ""
+
+#: inc/php/page.php:75
+msgid "Enjoy your fancy \"Scroll to Top\" button."
+msgstr ""
+
+#: inc/php/page.php:75
+msgid "It's that simple!"
+msgstr ""
+
+#: inc/php/page.php:77
+msgid "Note!"
+msgstr ""
+
+#: inc/php/page.php:77
+msgid "If you want more options then tell me and I will be happy to add it."
+msgstr ""
+
+#: inc/php/page.php:86
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: inc/php/page.php:90
+msgid "If you have a question, please read the Frequently Asked Questions below to see if the answer is here."
+msgstr ""
+
+#: inc/php/page.php:112
+msgid "Will this plugin work on my WordPress.COM website?"
+msgstr ""
+
+#: inc/php/page.php:113
+msgid "Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) websites."
+msgstr ""
+
+#: inc/php/page.php:115
+msgid "Can I use this plugin on my language?"
+msgstr ""
+
+#: inc/php/page.php:116
+msgid "Yes. This plugin is ready for translation and has already been translated into several languages."
+msgstr ""
+
+#: inc/php/page.php:118
+#, php-format
+msgid ""
+"If you want to help translate this plugin then please visit the %s. You can also use the POT file, that is included and "
+"placed in the \"languages\" folder, in order to create a translation PO file. Just send the PO file to me at the %s and I "
+"will include this translation within the next plugin update."
+msgstr ""
+
+#: inc/php/page.php:123
+msgid "Maybe not all existed translations are up to date. You are welcome to contribute corrections!"
+msgstr ""
+
+#: inc/php/page.php:124
+msgid ""
+"Many of plugin users would be delighted if you share your translation with the community. Thanks for your contribution!"
+msgstr ""
+
+#: inc/php/page.php:126
+msgid "How does it work?"
+msgstr ""
+
+#: inc/php/page.php:127
+msgid ""
+"On the \"Settings\" tab, select the desired settings and click the \"Save changes\" button. Enjoy your fancy \"Scroll to "
+"Top\" button. It's that simple!"
+msgstr ""
+
+#: inc/php/page.php:129
+msgid "Is it possible to use different buttons/arrows?"
+msgstr ""
+
+#: inc/php/page.php:130
+msgid ""
+"This plugin comes with the FontAwesome iconic font. Now you can customize the button style using and combining 10 symbols "
+"and 4 backgrounds from FontAwesome library, in result you have 40 variations of buttons. You can change the size of "
+"button, color (unlimited) of background, color (unlimited) of symbol and etc. A future version may include more buttons, "
+"and/or the option to upload your own button graphics."
+msgstr ""
+
+#: inc/php/page.php:132
+msgid "Does this plugin requires any modification of the theme?"
+msgstr ""
+
+#: inc/php/page.php:133
+msgid "Absolutely not. This plugin is configurable entirely from the plugin settings page."
+msgstr ""
+
+#: inc/php/page.php:135
+msgid "Does this require any knowledge of HTML or CSS?"
+msgstr ""
+
+#: inc/php/page.php:136
+msgid ""
+"Absolutely not. This plugin can be configured with no knowledge of HTML or CSS, using an easy-to-use plugin settings page."
+msgstr ""
+
+#: inc/php/page.php:138
+msgid "It's not working. What could be wrong?"
+msgstr ""
+
+#: inc/php/page.php:139
+msgid ""
+"As with every plugin, it's possible that things don't work. The most common reason for this is a web browser's cache. "
+"Every web browser stores a cache of the websites you visit (pages, images, and etc.) to reduce bandwidth usage and server "
+"load. This is called the browser's cache.​ Clearing your browser's cache may solve the problem."
+msgstr ""
+
+#: inc/php/page.php:140
+msgid ""
+"It's impossible to tell what could be wrong exactly, but if you post a support request in the plugin's support forum on "
+"WordPress.org, I'd be happy to give it a look and try to help out. Please include as much information as possible, "
+"including a link to your website where the problem can be seen."
+msgstr ""
+
+#: inc/php/page.php:142
+msgid "The last WordPress update is preventing me from editing my website that is using this plugin. Why is this?"
+msgstr ""
+
+#: inc/php/page.php:143
+msgid ""
+"This plugin can not cause such problem. More likely, the problem are related to the settings of the website. It could just "
+"be a cache, so please try to clear your website's cache (may be you using a caching plugin, or some web service such as "
+"the CloudFlare) and then the cache of your web browser. Also please try to re-login to the website, this too can help."
+msgstr ""
+
+#: inc/php/page.php:145
+msgid "Where to report bug if found?"
+msgstr ""
+
+#: inc/php/page.php:147
+#, php-format
+msgid "Please visit the %s Dedicated Plugin Page on GitHub %s and report."
+msgstr ""
+
+#: inc/php/page.php:153
+msgid "Where to share any ideas or suggestions to make the plugin better?"
+msgstr ""
+
+#: inc/php/page.php:155
+#, php-format
+msgid "Any suggestions are very welcome! Please send me an email to %s. Thank you!"
+msgstr ""
+
+#: inc/php/page.php:160
+msgid "I love this plugin! Can I help somehow?"
+msgstr ""
+
+#: inc/php/page.php:162
+#, php-format
+msgid "Yes, any financial contributions are welcome! Just visit %s my website %s, click on the donate button, and thank you!"
+msgstr ""
+
+#: inc/php/page.php:168
+msgid "My question wasn't answered here."
+msgstr ""
+
+#: inc/php/page.php:170
+#, php-format
+msgid ""
+"You can ask your question on the plugin support page %s. But please keep in mind that this plugin is free, and there is no "
+"a special support team, so I have no way to answer everyone."
+msgstr ""
+
+#: inc/php/page.php:186
+msgid "If you appreciate my work, you can buy me a coffee!"
+msgstr ""
+
+#: inc/php/page.php:187
+msgid ""
+"I spend a lot of time and effort trying to make sure that the themes, plugins and another things I build are useful, and "
+"the ultimate proof of that for me is that you actually want to use them. But, I’m an independent developer, without a "
+"regular income, so every little contribution helps cover my costs and lets me spend more time building things for people "
+"like you to enjoy."
+msgstr ""
+
+#: inc/php/page.php:192 inc/php/settings.php:179 inc/php/sidebar.php:34
+msgid "Donate with PayPal"
+msgstr ""
+
+#: inc/php/page.php:194
+msgid "Thank you for your support!"
+msgstr ""
+
+#: inc/php/settings.php:36
+msgid "Main Settings"
+msgstr ""
+
+#: inc/php/settings.php:38
+msgid "There you can configure this plugin."
+msgstr ""
+
+#: inc/php/settings.php:43
+msgid "Enable \"Scroll to Top\" button"
+msgstr "Activar el botón de \"Ir al Inicio de la Página\""
+
+#: inc/php/settings.php:50
+msgid "Button background"
+msgstr "Fondo del botón"
+
+#: inc/php/settings.php:67
+msgid "Without background"
+msgstr "Sin fondo"
+
+#: inc/php/settings.php:74
+msgid "Button background color"
+msgstr "Color de fondo del botón"
+
+#: inc/php/settings.php:81
+msgid "Select the background color of button. You can also add html HEX color code."
+msgstr "Selecciona el color de fondo del botón. Puedes añadir código HTML para un color HEX."
+
+#: inc/php/settings.php:85
+msgid "Button symbol"
+msgstr "Símbolo del botón"
+
+#: inc/php/settings.php:103
+msgid "Button symbol color"
+msgstr "Color del símbolo del botón"
+
+#: inc/php/settings.php:110
+msgid "Select the color of symbol inside button. You can also add html HEX color code."
+msgstr "Selecciona el color del símbolo del botón. Puedes añadir código HTML para un color HEX."
+
+#: inc/php/settings.php:114
+msgid "Button transparency"
+msgstr "Transparencia del botón"
+
+#: inc/php/settings.php:121
+msgid "Button size"
+msgstr "Tamaño del botón"
+
+#: inc/php/settings.php:122
+msgid "You can set the size of button (in px). The default size is 32 pixels."
+msgstr ""
+
+#: inc/php/settings.php:130
+msgid "Scroll duration"
+msgstr ""
+
+#: inc/php/settings.php:131
+msgid ""
+"Duration is given in milliseconds. Higher values indicate slower animation (speed/smoothness), not faster ones. The "
+"default duration is 300 milliseconds."
+msgstr ""
+
+#: inc/php/settings.php:139
+msgid "Display button on"
+msgstr "Mostrar el botón"
+
+#: inc/php/settings.php:142
+msgid "Full Website"
+msgstr "En todo el sitio web"
+
+#: inc/php/settings.php:143
+msgid "Home Page Only"
+msgstr "Sólo en la Página de Inicio"
+
+#: inc/php/settings.php:149
+msgid "Select where button need to be appeared."
+msgstr "Selecciona dónde quieres que aparezca el botón."
+
+#: inc/php/settings.php:154
+msgid "Save changes"
+msgstr "Guardar los cambios"
+
+#: inc/php/settings.php:160
+msgid "Live Preview"
+msgstr ""
+
+#: inc/php/settings.php:174 inc/php/sidebar.php:29
+msgid ""
+"I'm an independent developer, without a regular income, so every little contribution helps cover my costs and lets me "
+"spend more time building things for people like you to enjoy."
+msgstr ""
+
+#: inc/php/settings.php:181 inc/php/sidebar.php:36
+msgid "Thanks for your support!"
+msgstr "¡Gracias por su colaboración!"
+
+#: inc/php/sidebar.php:20
+msgid "About"
+msgstr "Acerca  de"
+
+#: inc/php/sidebar.php:22
+msgid "This plugin allows you to easily add the \"Scroll to Top\" button to your website in a simple and elegant way."
+msgstr "Este plugin permite añadir en tu sitio web un botón de \"Ir al Inicio de la Página\" de forma simple y elegante."
+
+#: inc/php/sidebar.php:41
+msgid "Help"
+msgstr "Ayuda"
+
+#: inc/php/sidebar.php:43
+msgid "If you have a question, please read the information in the FAQ section."
+msgstr "¿Tienes algo que decir? ¿Necesitas ayuda?"
+
+#. Plugin Name of the plugin/theme
+msgid "Simple Scroll to Top Button"
+msgstr "Botón simple para Ir al Inicio de la Página"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/ArthurGareginyan/simple-scroll-to-top-button"
+msgstr "https://github.com/ArthurGareginyan/simple-scroll-to-top-button"
+
+#. Description of the plugin/theme
+msgid ""
+"Easily add cross browser \"Scroll to Top\" button to your website. It will be responsive and compatible with all major "
+"browsers. It will work with any theme!"
+msgstr ""
+"Añade fácilmente en tu sitio web un botón de \"Ir al Inicio de la página\" en el navegador. Es responsive y compatible con "
+"los principales navegadores. ¡Funciona con cualquier tema!"
+
+#. Author of the plugin/theme
+msgid "Arthur Gareginyan"
+msgstr "Arthur Gareginyan"
+
+#. Author URI of the plugin/theme
+msgid "https://www.arthurgareginyan.com"
+msgstr "https://www.arthurgareginyan.com"
+
+#~ msgid "Preview"
+#~ msgstr "Vista previa"
+
+#~ msgid "You can set the size of button (in px)."
+#~ msgstr "Puedes definir el tamaño del botón (en píxeles)."
+
+#~ msgid "Click \"Save changes\" to update this preview."
+#~ msgstr "Haz clic en \"Guardar los cambios\" para actualizar esta vista previa."
+
+#~ msgid "by <a href=\"https://www.arthurgareginyan.com\" target=\"_blank\">Arthur Gareginyan</a>"
+#~ msgstr "por <a href=\"https://www.arthurgareginyan.com\" target=\"_blank\">Arthur Gareginyan</a>"
+
+#~ msgid "Using"
+#~ msgstr "Uso"
+
+#~ msgid "To use, select the desired settings and click \"Save changes\". It's that simple!"
+#~ msgstr "Para usarlo, selecciona los ajustes deseados, y haz clic en \"Guardar los cambios\". ¡Así de simple!"
+
+#~ msgid "Advertisement"
+#~ msgstr "Publicidad"
+
+#~ msgid "If you like this plugin and find it useful, please help me to make this plugin even better and keep it up-to-date."
+#~ msgstr "Si te gusta este plugin y lo encuentras útil, ayúdame a mejorar este plugin y a mantenerlo actualizado."

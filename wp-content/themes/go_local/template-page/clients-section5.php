@@ -55,6 +55,26 @@ Template Name: clients section 5
     padding-bottom: 2%;
     text-shadow: 2px 2px 5px #9E9E9E;
 }
+@media screen and (max-width: 768px) {
+	.testimonials h1 {
+	    margin-right: 16%;
+	    display: inline-block;
+	    border-bottom: 3px solid #EDA031;
+	    padding-bottom: 2%;
+	    text-shadow: 2px 2px 5px #9E9E9E;
+	}
+	.item h5 {
+	    font-size: 22px;
+	    font-weight: 700;
+	    
+	}
+	.item span {
+	    font-size: 22px;
+	    font-weight: 400;
+	    padding-bottom: 35px;
+	    display: inline-block;
+	}
+}
   </style>
   <?php 
  $args = array(

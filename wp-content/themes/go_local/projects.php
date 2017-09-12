@@ -69,7 +69,7 @@ padding-top: 35%;
 
 
 .project-area{
-  background-color: #42BCB0;
+  background-color: #06BFB6;
   opacity: 9%;
   padding-top: 1%;
 }
@@ -270,6 +270,18 @@ padding-top: 50%;
  text-shadow: 2px 2px 5px #9E9E9E;
 }
 
+}
+@media screen and (max-width: 768px) {
+  .service-heading {
+      color: white;
+      margin-bottom: 10%;
+      font-size: x-large;
+  }
+  .service-subheading {
+      color: white;
+      font-size: x-large;
+  }
+  
 }
 
 

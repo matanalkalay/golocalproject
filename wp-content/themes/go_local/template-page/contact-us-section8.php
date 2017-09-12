@@ -25,6 +25,17 @@ Template Name: contact us section 8
     box-shadow: 0px 0px 10px #242121;
     border-radius: 20px;
 	}
+	@media screen and (max-width: 768px) {
+		.section8 {
+		    background-color: #00BFB6;
+		    height: 400px;
+		    padding-top: 8%;
+		}
+		.wpcf7-form-control-wrap {
+		    position: relative;
+		    font-size: 14px;
+		}
+	}
 </style>
 <body>
 	<div class="section8">

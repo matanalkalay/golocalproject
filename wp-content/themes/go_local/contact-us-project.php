@@ -5,7 +5,7 @@ Template Name: contact us section 8
 ?>
 <style type="text/css">
 	.section8 {
-		background-color: #42BCB0;
+		background-color: #00BFB6;
 		opacity: 9%;
 		height: 400px;
 	}
@@ -18,16 +18,26 @@ Template Name: contact us section 8
 	border: 1px solid white;
     border-radius: 10px;
     padding: 1%;
-    background-color:#ED9C28;
+    background-color: #00BFB6;
 	}
 	.section8 .wpcf7-submit {
 	width: 16%;
-    color: #ED9C28;
+    color: #42bcb0;
     background: white;
     box-shadow: 0px 0px 10px #242121;
     border-radius: 20px;
     font-size: 150%;
 	}
+@media screen and (max-width: 768px) {
+		.section8 .wpcf7-submit {
+		    width: 60%;
+		    color: #42bcb0;
+		    background: white;
+		    box-shadow: 0px 0px 10px #242121;
+		    border-radius: 20px;
+		    font-size: 170%;
+		}
+}
 </style>
 <body>
 	<div class="section8">
