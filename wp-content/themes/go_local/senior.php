@@ -1,5 +1,5 @@
-<?php 
-/* Template Name: תבנית בוגרים */ 
+<?php
+/* Template Name: תבנית בוגרים */
 get_header(); ?>
 
 <head>
@@ -15,7 +15,7 @@ get_header(); ?>
   <!-- Our app.js File -->
   <script type="text/javascript" src="<?php echo site_url('wp-content/themes/go_local/js/seniorapp.js' ); ?>">
     </script>
-<link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'> 
+<link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
 </head>
 <style type="text/css">
 	/* go on then, styles go here.. knock yourself out! */
@@ -25,11 +25,11 @@ get_header(); ?>
 .allSeniors {
     /*padding-bottom: 10%;*/
     padding-top: 5%;
-    /*background-color: lightgray;*/ 
+    /*background-color: lightgray;*/
     background-color:#E8C433;
     opacity: 9%;
       /* Set a specific height */
-      min-height: 500px; 
+      min-height: 500px;
 
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
@@ -47,7 +47,7 @@ get_header(); ?>
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
@@ -58,7 +58,7 @@ get_header(); ?>
 
  .search-senior input:focus {
     width: 30%;
-} 
+}
 .search-senior select {
   width: 250px;
     box-sizing: border-box;
@@ -66,7 +66,7 @@ get_header(); ?>
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
@@ -77,7 +77,7 @@ get_header(); ?>
 
  .search-senior select:focus {
     width: 30%;
-}   
+}
 
 .top-area-profile img {
   border-radius: 50%;
@@ -338,7 +338,7 @@ aside:hover .profile-social-links {
 
 </style>
 <body>
-		<?php 
+		<?php
 		require 'section4.php';
 		    $args = array(
 				'post_type' => array( 'senior' )

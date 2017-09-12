@@ -16,5 +16,6 @@ $commonPath = get_longest_common_subsequence($currentPath, $path);
 $baseUrl = $host . $commonPath;
 
 // Set for settings
+$baseUrl = 'http://www.golocal.co.il';
 define('WP_HOME', $baseUrl);
 define('WP_SITEURL', $baseUrl);
