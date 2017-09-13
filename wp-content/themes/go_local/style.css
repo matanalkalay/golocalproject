@@ -146,21 +146,21 @@ list-style: none;
 .infoFooter{
 	text-align: center;
 }
-.fa-facebook-official {
+footer .fa-facebook-official {
     background-color: #00bfb6;
     border: 1px solid #00bfb6;
     border-radius: 50%;
     color: white;
     padding: 8%;
 }
-.fa-twitter {
+footer .fa-twitter {
 background-color: #00bfb6;
     border: 1px solid #00bfb6;
     border-radius: 50%;
     color: white;
     padding: 8%;
 }
-.fa-linkedin {
+footer .fa-linkedin {
 	background-color: #00bfb6;
     border: 1px solid #00bfb6;
     border-radius: 50%;
@@ -175,21 +175,21 @@ background-color: #00bfb6;
 	.menuFooter {
 		display: none;
 	}
-	.fa-facebook-official {
+	footer .fa-facebook-official {
     background-color: #00bfb6;
     border: 1px solid #00bfb6;
     border-radius: 50%;
     color: white;
     padding: 4%;
 	}
-	.fa-twitter {
+	footer .fa-twitter {
 	background-color: #00bfb6;
 	    border: 1px solid #00bfb6;
 	    border-radius: 50%;
 	    color: white;
 	    padding: 4%;
 	}
-	.fa-linkedin {
+	footer .fa-linkedin {
 		background-color: #00bfb6;
 	    border: 1px solid #00bfb6;
 	    border-radius: 50%;
@@ -198,21 +198,21 @@ background-color: #00bfb6;
 	}
 }
 @media screen and (min-width: 650px) and (max-width: 1200px) {
-	.fa-facebook-official {
+	footer .fa-facebook-official {
     background-color: #00bfb6;
     border: 1px solid #00bfb6;
     border-radius: 50%;
     color: white;
     padding: 2%;
 	}
-	.fa-twitter {
+	footer .fa-twitter {
 	background-color: #00bfb6;
 	    border: 1px solid #00bfb6;
 	    border-radius: 50%;
 	    color: white;
 	    padding: 2%;
 	}
-	.fa-linkedin {
+	footer .fa-linkedin {
 		background-color: #00bfb6;
 	    border: 1px solid #00bfb6;
 	    border-radius: 50%;

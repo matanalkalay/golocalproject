@@ -57,7 +57,7 @@ Template Name: clients section 5
 }
 @media screen and (max-width: 768px) {
 	.testimonials h1 {
-	    margin-right: 16%;
+	    margin-right: 12%;
 	    display: inline-block;
 	    border-bottom: 3px solid #EDA031;
 	    padding-bottom: 2%;
@@ -73,6 +73,15 @@ Template Name: clients section 5
 	    font-weight: 400;
 	    padding-bottom: 35px;
 	    display: inline-block;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+	.testimonials h1 {
+	    margin-right: 33%!important;
+	    display: inline-block;
+	    border-bottom: 3px solid #EDA031;
+	    padding-bottom: 2%;
+	    text-shadow: 2px 2px 5px #9E9E9E;
 	}
 }
   </style>

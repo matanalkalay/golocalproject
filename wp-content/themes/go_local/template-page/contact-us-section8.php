@@ -33,7 +33,23 @@ Template Name: contact us section 8
 		}
 		.wpcf7-form-control-wrap {
 		    position: relative;
-		    font-size: 14px;
+		    font-size: 12px;
+		}
+		.section8 .wpcf7-submit {
+		    width: 45%;
+		    color: #00BFB6;
+		    background: white;
+		    box-shadow: 0px 0px 10px #242121;
+		    border-radius: 20px;
+		}
+	}
+	@media screen and (min-width: 768px) and (max-width: 1000px) {
+		.section8 .wpcf7-submit {
+		    width: 25%;
+		    color: #00BFB6;
+		    background: white;
+		    box-shadow: 0px 0px 10px #242121;
+		    border-radius: 20px;
 		}
 	}
 </style>

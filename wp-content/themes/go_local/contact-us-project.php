@@ -30,7 +30,22 @@ Template Name: contact us section 8
 	}
 @media screen and (max-width: 768px) {
 		.section8 .wpcf7-submit {
-		    width: 60%;
+		    width: 45%;
+		    color: #42bcb0;
+		    background: white;
+		    box-shadow: 0px 0px 10px #242121;
+		    border-radius: 20px;
+		    font-size: 170%;
+		}
+		.wpcf7-form-control-wrap {
+		    position: relative;
+		    font-size: 12px;
+		}
+
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+	.section8 .wpcf7-submit {
+		    width: 25%;
 		    color: #42bcb0;
 		    background: white;
 		    box-shadow: 0px 0px 10px #242121;

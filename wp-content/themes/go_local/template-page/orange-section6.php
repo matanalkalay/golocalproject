@@ -41,7 +41,7 @@ Template Name: orange section 6
 	}
 	button.btn-lg {
 	    padding: 15px 55px!important;
-	    font-size: 22px!important;
+	    font-size: 18px!important;
 	    line-height: 1.3333333!important;
 	    border-radius: 35px!important;
 	}

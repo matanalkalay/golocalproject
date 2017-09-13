@@ -45,7 +45,7 @@ Template Name: video section 4
 		.section4 {
 		    /* background-color: #42BCB0; */
 		    /*background-image: url(http://localhost/golocalproject/wp-content/uploads/2017/09/video_bkg_pic.png);*/
-		    padding: 5%;
+		    padding: 2%;
 		    min-height: 285px!important;
 		    background-attachment: fixed;
 		    background-position: center;

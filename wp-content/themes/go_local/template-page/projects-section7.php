@@ -231,6 +231,54 @@ li{
     transition: box-shadow 0.5s;
 }
 }
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .allProjets {
+      margin-top: 40%;
+      margin-bottom: -17%;
+      margin-left: -4%;
+  }
+    .card {
+      margin-left: 3%;
+      position: relative;
+      right: -115px;
+      top: 142px;
+      margin-bottom: 8%;
+      width: 220px;
+      height: 540px;
+      border: 1px solid #00BFB6;
+      border-radius: 25px;
+      display: inline-block;
+      -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
+      transform: translateX(-50%) translateY(-50%) translateZ(0);
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      -webkit-transition: box-shadow 0.5s;
+      transition: box-shadow 0.5s;
+  }
+    .card__thumb {
+      height: 245px;
+      width: 280px;
+      margin: -8%;
+      overflow: hidden;
+      background-color: #000;
+      -webkit-transition: height 0.5s;
+      transition: height 0.5s;
+  }
+    .card__thumb img {
+      display: block;
+      width: 78%;
+      height: 102%;
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+      transition: opacity 0.5s, -webkit-transform 0.5s;
+      transition: opacity 0.5s, transform 0.5s;
+      transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  }
+}
+
 </style>
 <body>
 <div class="section7">

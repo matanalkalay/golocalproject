@@ -18,19 +18,17 @@
   
     <ul>
     <li ng-repeat="post in senior | filter:query |filter:Query_class ">
-    <div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 middle">
                             <div class="team-member">
                                 <div class="team-img">
                                 <img class="img-responsive"  ng-src="{{post.acf.senior_img.url}}"  />
                                 </div>
                                 <div class="team-hover">
                                     <div class="desk">
-                                        <h4>Hi There !</h4>
                                         <p>{{post.acf.senior_city}}</p>
-                             <p>{{post.acf.senior_class}}</p>
-                      
-                        <p>פרוייקטים שלקחתי בהם חלק :{{post.acf.senior_projets}}</p>
-                        <p>תוכלו לראות את הפרוייקטים שלי בעמוד הפרויקטים באתר.</p>
+                                        <p>{{post.acf.senior_class}}</p>
+                                        <p>הפרויקטים שלי :{{post.acf.senior_projets}}</p>
+                                        <p>הפרויקטים מופיעים בעמוד הפרויקטים</p>
                                     </div>
                                     <div class="s-link">
                                         <a href="{{post.acf.facebook_address}}"><i class="fa fa-facebook"></i></a>
